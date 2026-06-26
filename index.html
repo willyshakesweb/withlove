@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nails by Niru | Luxury Nail Artist in Ajah & Lekki, Lagos</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="Nails by Niru | Luxury Nail Artist in Lagos">
+    <meta property="og:description" content="Clean, sculpted sets in Ajah & Lekki, Lagos. Gel, Acrylic, French, Toes. Classes available.">
+    <meta property="og:image" content="/images/homepage/gallery-hand1.jpg">
+    <meta name="description" content="Luxury nail artistry in Ajah Lekki, Lagos. Clean, sculpted sets and the soft-girl luxury experience from Professional Nail Artist & Educator Niru.">
+  </head>
+  <body class="bg-white text-text-dark bg-noise min-h-screen selection:bg-pastel-pink selection:text-deep-berry">
+    
+    <!-- Floating Background Image System -->
+    <div class="page-bg" style="background-image: url('/images/backgrounds/studio-bg.jpg'); background-position: center; background-size: cover;"></div>
+    <!-- Soft Pastel Pink Luxury Overlay Gradient -->
+    <div class="fixed inset-0 bg-gradient-to-tr from-warm-cream/65 via-blush-light/55 to-warm-cream/60 -z-1 pointer-events-none"></div>
+
+    <!-- Page Loading Progress Bar -->
+    <div id="loading-bar" class="fixed top-0 left-0 h-1 bg-pastel-pink w-0 transition-all duration-300 z-[10000]"></div>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 py-6 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="group flex flex-col focus:outline-none">
+          <span class="font-serif text-2xl md:text-3xl font-light tracking-wide text-deep-berry leading-tight transition-colors group-hover:text-dusty-rose">With Love N</span>
+          <span class="font-sans text-[10px] md:text-xs uppercase tracking-[0.25em] text-dusty-rose -mt-0.5 font-medium transition-colors group-hover:text-deep-berry">Nails by Niru</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="hidden md:flex items-center space-x-10 text-xs font-semibold uppercase tracking-[0.2em] text-deep-berry/80">
+          <li><a href="index.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[1px] after:bg-pastel-pink after:scale-x-100 origin-left">Home</a></li>
+          <li><a href="about.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">About</a></li>
+          <li><a href="services.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">Services</a></li>
+          <li><a href="gallery.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">Gallery</a></li>
+          <li><a href="classes.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300 hidden lg:inline-block">Classes</a></li>
+          <li><a href="contact.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">Contact</a></li>
+          <li>
+            <a href="book.html" class="inline-flex items-center justify-center text-center bg-pastel-pink text-deep-berry px-6 py-2.5 rounded-full hover:bg-dusty-rose hover:text-white hover:scale-[1.03] transition-all duration-300 shadow-sm focus:ring-1 focus:ring-pastel-pink">Book Your Set</a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="menu-toggle" class="md:hidden text-deep-berry focus:outline-none p-2 relative z-50" aria-label="Toggle Menu">
+          <svg id="hamburger-icon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 transition-transform duration-300 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Menus -->
+    <div id="mobile-drawer" class="fixed inset-0 bg-deep-berry/40 backdrop-blur-md z-[9990] hidden transition-opacity duration-300 opacity-0">
+      <div class="fixed top-0 right-0 w-[80%] max-w-sm h-full bg-white shadow-2xl z-[9995] flex flex-col p-10 justify-between transition-transform duration-500 translate-x-full">
+        <!-- Drawer Links -->
+        <div class="flex flex-col space-y-8 pt-16">
+          <div class="border-b border-blush-mid/40 pb-4">
+            <span class="font-serif text-xl tracking-wide text-deep-berry block">With Love N</span>
+            <span class="font-sans text-[10px] uppercase tracking-widest text-dusty-rose font-medium">Lagos soft luxury design</span>
+          </div>
+          <ul class="flex flex-col space-y-6 text-sm font-bold uppercase tracking-[0.25em] text-deep-berry">
+            <li><a href="index.html" class="hover:text-dusty-rose block py-2 border-b border-transparent transition-all">Home</a></li>
+            <li><a href="about.html" class="hover:text-dusty-rose block py-2 border-b border-transparent transition-all">About</a></li>
+            <li><a href="services.html" class="hover:text-dusty-rose block py-2 border-b border-transparent transition-all">Services</a></li>
+            <li><a href="gallery.html" class="hover:text-dusty-rose block py-2 border-b border-transparent transition-all">Gallery</a></li>
+            <li><a href="classes.html" class="hover:text-dusty-rose block py-2 border-b border-transparent transition-all">Classes</a></li>
+            <li><a href="contact.html" class="hover:text-dusty-rose block py-2 border-b border-transparent transition-all">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <a href="book.html" class="flex items-center justify-center text-center w-full bg-pastel-pink text-deep-berry py-4 rounded-full font-semibold uppercase tracking-wider text-xs hover:bg-dusty-rose hover:text-white transition-colors shadow-md">Book Your Set</a>
+          <span class="text-[10px] text-center block text-dusty-rose mt-4 uppercase tracking-widest">Dipo Omotayo, Ajah Lekki</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section (Full Viewport) -->
+    <header class="relative min-h-screen flex items-center justify-center px-6 pt-24 md:pt-0 overflow-hidden">
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-10">
+        
+        <!-- Hero Text Content -->
+        <div class="md:col-span-7 flex flex-col items-start space-y-6 md:space-y-8 reveal select-none">
+          <div class="flex items-center space-x-3">
+            <span class="h-[1px] w-8 bg-dusty-rose"></span>
+            <span class="font-sans text-xs uppercase tracking-[0.3em] text-dusty-rose font-bold">Est. 2023 — Ajah, Lagos</span>
+          </div>
+          
+          <h1 class="font-serif font-light text-5xl sm:text-6xl lg:text-8xl tracking-tight text-deep-berry leading-[1.05] max-w-xl md:max-w-3xl">
+            The Home of <br />
+            <span class="italic font-normal text-dusty-rose">Clean</span>, Sculpted Sets.
+          </h1>
+          
+          <p class="font-sans text-sm md:text-base text-deep-berry/70 max-w-md font-normal leading-relaxed">
+            Beautifully precise, hand-sculpted nail artistry in the heart of Ajah Lekki. A quiet, feminine space tailored for girlies who recognize real craft and appreciate unhurried soft-girl luxury.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4 w-full sm:w-auto">
+            <a href="book.html" class="inline-flex items-center justify-center text-center bg-pastel-pink text-deep-berry font-sans font-medium text-xs uppercase tracking-[0.2em] px-8 py-4 rounded-full hover:bg-dusty-rose hover:text-white hover:scale-[1.02] transform transition-all duration-300 shadow-md">
+              Reserve My Spot
+            </a>
+            <a href="gallery.html" class="inline-flex items-center justify-center text-center border border-pastel-pink text-text-dark font-sans font-medium text-xs uppercase tracking-[0.2em] px-8 py-4 rounded-full hover:border-deep-pink hover:bg-pastel-pink/10 transition-all duration-300">
+              See the Work
+            </a>
+          </div>
+        </div>
+
+        <!-- Asymmetric Hero Visual Card (Breaks symmetry design constraint) -->
+        <div class="md:col-span-5 relative flex justify-center md:justify-end reveal">
+          <div class="relative w-full max-w-sm aspect-[4/5] bg-blush-light rounded-2xl p-4 shadow-xl rotate-[1.5deg] hover:rotate-0 hover:scale-[1.01] transition-all duration-700 group md:translate-x-4">
+            <!-- Glass Overlay Header -->
+            <div class="absolute top-8 left-8 glass-card rounded-full px-4 py-1.5 z-20 shadow-sm flex items-center space-x-2">
+              <span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+              <span class="font-sans text-[10px] uppercase font-bold tracking-widest text-deep-berry">Active Booking</span>
+            </div>
+            
+            <!-- Real photo frame -->
+            <div class="w-full h-full rounded-xl overflow-hidden relative shadow-inner">
+              <img src="/images/homepage/gallery-hand1.jpg" alt="Beautiful Gel Almond Set" class="w-full h-full object-cover transform object-center transition-transform duration-700 group-hover:scale-105" loading="eager" referrerPolicy="no-referrer" />
+              <div class="absolute inset-0 bg-gradient-to-t from-deep-berry/40 via-transparent to-transparent"></div>
+            </div>
+            
+            <!-- Polaroid Style Label -->
+            <div class="absolute bottom-6 left-8 right-8 text-white z-10">
+              <span class="font-serif italic text-lg leading-none">Sweet Almond Freestyles</span>
+              <span class="block font-sans text-[9px] uppercase tracking-[0.2em] text-white/80 mt-1">Sculpted Gel / NailsbyNiru_</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editorial Scroll Indicator Line -->
+      <div id="scroll-hint" class="absolute bottom-10 left-1 /2 -translate-x-[50%] flex flex-col items-center space-y-3 cursor-pointer select-none">
+        <span class="font-sans text-[9px] uppercase tracking-[0.25em] text-dusty-rose font-semibold">Scroll down</span>
+        <div class="w-[1px] h-12 bg-gradient-to-b from-dusty-rose to-transparent relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-[50%] bg-deep-pink animate-[bounce_2s_infinite]"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Social Proof Ticker Section -->
+    <section class="relative bg-blush-light py-4 border-y border-blush-mid/30 overflow-hidden w-full select-none z-10 shadow-sm">
+      <div class="flex overflow-x-hidden">
+        <div class="animate-ticker font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-deep-berry whitespace-nowrap flex items-center">
+          <span class="mx-6 text-dusty-rose">●</span> 200+ Happy Clients 
+          <span class="mx-6 text-dusty-rose">●</span> 3 Years of Precise Artistry 
+          <span class="mx-6 text-dusty-rose">●</span> Ajah Lekki & Addo Road, Lagos 
+          <span class="mx-6 text-dusty-rose">●</span> Home Service Available 
+          <span class="mx-6 text-dusty-rose">●</span> Premium Gel & Acrylics 
+          <span class="mx-6 text-dusty-rose">●</span> Master Classes Now Open 
+          <span class="mx-6 text-dusty-rose">●</span> Clean, Sculpted Finishes Only
+          <!-- Repeated for smooth looping -->
+          <span class="mx-6 text-dusty-rose">●</span> 200+ Happy Clients 
+          <span class="mx-6 text-dusty-rose">●</span> 3 Years of Precise Artistry 
+          <span class="mx-6 text-dusty-rose">●</span> Ajah Lekki & Addo Road, Lagos 
+          <span class="mx-6 text-dusty-rose">●</span> Home Service Available 
+          <span class="mx-6 text-dusty-rose">●</span> Premium Gel & Acrylics 
+          <span class="mx-6 text-dusty-rose">●</span> Master Classes Now Open 
+          <span class="mx-6 text-dusty-rose">●</span> Clean, Sculpted Finishes Only
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium Intro Section (Offset layout) -->
+    <section class="max-w-7xl mx-auto py-24 px-6 md:py-32 md:px-12 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Text intro -->
+        <div class="lg:col-span-5 flex flex-col space-y-6 reveal">
+          <span class="font-sans text-[11px] uppercase tracking-[0.25em] text-dusty-rose font-bold">01 — PHILOSOPHY</span>
+          <h2 class="font-serif text-4xl md:text-5xl font-light text-deep-berry tracking-tight leading-tight">
+            Your nails are an <span class="italic">intention</span>, not an afterthought.
+          </h2>
+          <p class="font-sans text-sm md:text-base text-deep-berry/75 leading-relaxed">
+            In a fast-paced city like Lagos, we believe your beauty appointments should be a peaceful sanctuary. At Nails by Niru, there are no rushed sets, no split cuticle zones, and zero half-hearted paint jobs. We meticulously handcraft and sculpt every client's set from scratch to last up to six weeks.
+          </p>
+          <div class="pt-2">
+            <a href="about.html" class="group font-sans text-xs font-bold uppercase tracking-[0.2em] text-deep-berry flex items-center space-x-2 hover:text-dusty-rose transition-colors">
+              <span>Read Niru's Full Story</span>
+              <span class="transform group-hover:translate-x-2 transition-transform duration-300">⟶</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Floating Masonry Imagery -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 relative">
+          <div class="flex flex-col space-y-6">
+            <div class="reveal aspect-[4/3] rounded-xl overflow-hidden glass-card p-3 shadow-md">
+              <img src="/images/homepage/image-1homepage.jpg" alt="Niru's Nail Set" class="w-full h-full object-cover object-top rounded-lg" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+            <div class="reveal aspect-[3/4] rounded-xl overflow-hidden glass-card p-3 shadow-md rotate-[-1.5deg] hover:rotate-0 transition-all duration-500">
+              <img src="/images/homepage/image-2homepage.jpg" alt="Niru's Nail Set" class="w-full h-full object-cover rounded-lg" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+          </div>
+          <div class="flex flex-col justify-center space-y-6 pt-6 sm:pt-16">
+            <div class="reveal aspect-[3/4] rounded-xl overflow-hidden glass-card p-3 shadow-md rotate-[1deg] hover:rotate-0 transition-all duration-500">
+              <img src="/images/homepage/image-3homepage.jpg" alt="Niru's Nail Set" class="w-full h-full object-cover rounded-lg" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+            <div class="reveal bg-white border-2 border-pastel-pink p-8 rounded-2xl shadow-xl flex flex-col justify-between aspect-square text-text-dark">
+              <span class="font-serif italic text-3xl font-light text-deep-pink leading-normal">
+                "Nails that do not lift for six full weeks."
+              </span>
+              <div>
+                <span class="block font-sans text-xs uppercase tracking-widest font-bold tracking-[0.15em] text-text-dark">Precious</span>
+                <span class="block font-sans text-[10px] uppercase tracking-widest text-deep-pink mt-0.5">Instagram review</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Niru's Works Swipe Carousel Section -->
+    <section class="max-w-7xl mx-auto py-16 px-6 md:px-12 relative z-10 select-none overflow-hidden">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+        <div class="space-y-2">
+          <span class="font-sans text-[11px] uppercase tracking-[0.25em] text-dusty-rose font-bold">PORTFOLIO</span>
+          <h2 class="font-serif text-3xl md:text-5xl font-light text-deep-berry tracking-tight">Niru's Works</h2>
+          <p class="font-sans text-xs sm:text-sm text-deep-berry/70 leading-relaxed max-w-xl">
+            A closer look at her hand — every set, her own touch.
+          </p>
+        </div>
+        <!-- Desktop Buttons -->
+        <div class="flex items-center space-x-3 mt-4 md:mt-0">
+          <button id="niru-home-carousel-prev" class="w-10 h-10 rounded-full bg-blush-light text-deep-berry hover:bg-pastel-pink hover:text-white transition-all flex items-center justify-center cursor-pointer focus:outline-none" aria-label="Previous slide">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button id="niru-home-carousel-next" class="w-10 h-10 rounded-full bg-blush-light text-deep-berry hover:bg-pastel-pink hover:text-white transition-all flex items-center justify-center cursor-pointer focus:outline-none" aria-label="Next slide">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Scrollable Track with scroll-snap -->
+      <div id="niru-home-carousel-track" class="flex gap-4 overflow-x-auto scrollbar-none scroll-smooth snap-x snap-mandatory pb-4" style="scrollbar-width: none; -ms-overflow-style: none;">
+        <!-- Card 1 -->
+        <div class="flex-shrink-0 snap-start w-[180px] sm:w-[240px] md:w-[260px] aspect-[4/5] bg-white border border-blush-mid/10 p-2.5 rounded-[20px] shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="w-full h-full rounded-[14px] overflow-hidden">
+            <img src="/images/gallery/niru-works/niru-work2.jpeg" alt="Niru Work Set" class="w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="flex-shrink-0 snap-start w-[180px] sm:w-[240px] md:w-[260px] aspect-[4/5] bg-white border border-blush-mid/10 p-2.5 rounded-[20px] shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="w-full h-full rounded-[14px] overflow-hidden">
+            <img src="/images/gallery/niru-works/niru-work5.jpeg" alt="Niru Work Set" class="w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="flex-shrink-0 snap-start w-[180px] sm:w-[240px] md:w-[260px] aspect-[4/5] bg-white border border-blush-mid/10 p-2.5 rounded-[20px] shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="w-full h-full rounded-[14px] overflow-hidden">
+            <img src="/images/gallery/niru-works/niru-work6.jpeg" alt="Niru Work Set" class="w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="flex-shrink-0 snap-start w-[180px] sm:w-[240px] md:w-[260px] aspect-[4/5] bg-white border border-blush-mid/10 p-2.5 rounded-[20px] shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="w-full h-full rounded-[14px] overflow-hidden">
+            <img src="/images/gallery/niru-works/niru-work7.jpeg" alt="Niru Work Set" class="w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="flex-shrink-0 snap-start w-[180px] sm:w-[240px] md:w-[260px] aspect-[4/5] bg-white border border-blush-mid/10 p-2.5 rounded-[20px] shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="w-full h-full rounded-[14px] overflow-hidden">
+            <img src="/images/gallery/niru-works/niru-work10.jpeg" alt="Niru Work Set" class="w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="flex-shrink-0 snap-start w-[180px] sm:w-[240px] md:w-[260px] aspect-[4/5] bg-white border border-blush-mid/10 p-2.5 rounded-[20px] shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="w-full h-full rounded-[14px] overflow-hidden">
+            <img src="/images/gallery/niru-works/niru-work12.jpeg" alt="Niru Work Set" class="w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="flex-shrink-0 snap-start w-[180px] sm:w-[240px] md:w-[260px] aspect-[4/5] bg-white border border-blush-mid/10 p-2.5 rounded-[20px] shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="w-full h-full rounded-[14px] overflow-hidden">
+            <img src="/images/gallery/niru-works/niru-work14.jpeg" alt="Niru Work Set" class="w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="flex-shrink-0 snap-start w-[180px] sm:w-[240px] md:w-[260px] aspect-[4/5] bg-white border border-blush-mid/10 p-2.5 rounded-[20px] shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="w-full h-full rounded-[14px] overflow-hidden">
+            <img src="/images/gallery/niru-works/niru-work15.jpeg" alt="Niru Work Set" class="w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="flex-shrink-0 snap-start w-[180px] sm:w-[240px] md:w-[260px] aspect-[4/5] bg-white border border-blush-mid/10 p-2.5 rounded-[20px] shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="w-full h-full rounded-[14px] overflow-hidden">
+            <img src="/images/gallery/niru-works/niru-work16.jpeg" alt="Niru Work Set" class="w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+        </div>
+        <!-- Card 10 -->
+        <div class="flex-shrink-0 snap-start w-[180px] sm:w-[240px] md:w-[260px] aspect-[4/5] bg-white border border-blush-mid/10 p-2.5 rounded-[20px] shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="w-full h-full rounded-[14px] overflow-hidden">
+            <img src="/images/gallery/niru-works/niru-work17.jpeg" alt="Niru Work Set" class="w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const track = document.getElementById('niru-home-carousel-track');
+        const prevBtn = document.getElementById('niru-home-carousel-prev');
+        const nextBtn = document.getElementById('niru-home-carousel-next');
+        if (track && prevBtn && nextBtn) {
+          const cardWidth = window.innerWidth >= 768 ? 276 : 196;
+          prevBtn.addEventListener('click', () => {
+            track.scrollBy({ left: -cardWidth * 2, behavior: 'smooth' });
+          });
+          nextBtn.addEventListener('click', () => {
+            track.scrollBy({ left: cardWidth * 2, behavior: 'smooth' });
+          });
+        }
+      });
+    </script>
+
+    <!-- Services Spotlight Cards (Asymmetrically Sized) -->
+    <section class="max-w-7xl mx-auto py-24 px-6 md:px-12 bg-white/40 backdrop-blur-md rounded-3xl border border-white/30 relative z-10 shadow-sm overflow-hidden reveal">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <span class="font-sans text-[11px] uppercase tracking-[0.25em] text-dusty-rose font-bold">02 — SPECIALTIES</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-light text-deep-berry tracking-tight">The Signature Sets</h2>
+        <p class="font-sans text-sm text-deep-berry/70 leading-relaxed">
+          Each option is carefully designed around duration and perfection. Select your starting service, and customize the set during consultation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Gel Toes Card (1/3 Width On Desktop) -->
+        <div class="lg:col-span-4 flex flex-col justify-between glass-card p-6 md:p-8 rounded-2xl hover:shadow-lg transition-shadow duration-500 reveal group">
+          <div class="space-y-6">
+            <div class="aspect-video w-full rounded-xl overflow-hidden shadow-inner">
+              <img src="/images/homepage/gallery-toes3.jpg" alt="Gel Toes" class="w-full h-full object-cover object-center transition-transform duration-750 group-hover:scale-105" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <h3 class="font-serif text-2xl font-light text-deep-berry">Gel Toes</h3>
+                <span class="font-sans font-bold text-xs bg-blush-light text-dusty-rose px-3 py-1 rounded-full uppercase tracking-wider">Starting ₦5,000</span>
+              </div>
+              <p class="font-sans text-xs text-deep-berry/70 leading-relaxed">
+                Super glossy, thin-layered professional application cured to avoid any color fading. Made to look exceptionally neat in sandals.
+              </p>
+            </div>
+          </div>
+          <div class="pt-6 border-t border-blush-mid/20 mt-6 flex justify-between items-center">
+            <span class="font-sans text-[10px] uppercase tracking-wider text-dusty-rose font-medium">1 – 1.5 Hours</span>
+            <a href="services.html" class="text-xs font-semibold uppercase tracking-wider text-deep-berry hover:text-dusty-rose transition-colors">See details ⟶</a>
+          </div>
+        </div>
+
+        <!-- Acrylic French Card (Visually Dominant - 2/3 Width On Desktop) -->
+        <div class="lg:col-span-8 flex flex-col justify-between bg-white border-2 border-pastel-pink p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 text-text-dark reveal group">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            <div class="md:col-span-6 space-y-6">
+              <span class="font-sans text-[9px] uppercase tracking-[0.25em] text-deep-pink font-bold">Studio Favorite</span>
+              <h3 class="font-serif text-3xl font-light text-text-dark leading-tight">Acrylic French</h3>
+              <p class="font-sans text-xs text-text-muted leading-relaxed">
+                The classic, done right. Clean white tips, hand-shaped to fit your fingers, finished smooth and even — every single time.
+              </p>
+              <div class="text-left">
+                <span class="font-sans font-bold text-sm text-deep-pink bg-pastel-pink/15 px-4 py-1.5 rounded-full uppercase tracking-widest block w-max">Starting ₦15,000</span>
+              </div>
+            </div>
+            <div class="md:col-span-6 aspect-square rounded-xl overflow-hidden shadow-inner group-hover:rotate-1 transition-transform duration-700">
+              <img src="/images/homepage/french-experinence.jpg" alt="Acrylic French" class="w-full h-full object-cover object-top transition-transform duration-750 group-hover:scale-105" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+          </div>
+          <div class="pt-6 border-t border-blush-mid/20 mt-8 flex justify-between items-center text-xs">
+            <span class="font-sans text-[10px] uppercase tracking-wider text-deep-pink/90 font-medium">1.5 – 2 Hours duration</span>
+            <a href="services.html" class="font-semibold uppercase tracking-wider text-text-dark hover:text-deep-pink transition-colors">Explore sizes & shapes ⟶</a>
+          </div>
+        </div>
+
+        <!-- Custom Nail Art Card (Full Width On Desktop - 12/12) -->
+        <div class="lg:col-span-12 flex flex-col lg:flex-row justify-between glass-card p-6 md:p-8 rounded-2xl hover:shadow-lg transition-shadow duration-500 reveal group">
+          <div class="lg:w-[45%] flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 rounded-full bg-pastel-pink"></span>
+                <span class="font-sans text-[10px] uppercase tracking-wider text-dusty-rose font-bold">Freestyle Designs Available</span>
+              </div>
+              <h3 class="font-serif text-2xl md:text-3xl font-light text-deep-berry">Custom Nail Art & Cartoon Set</h3>
+              <p class="font-sans text-sm text-deep-berry/70 leading-relaxed">
+                Send me your inspo — cartoon faces, characters, whatever you've got in mind. I'll hand-paint it onto your set with gems and details, all on a strong acrylic base that holds up.
+              </p>
+            </div>
+            <div class="pt-4">
+              <span class="font-sans font-bold text-xs bg-pastel-pink text-text-dark px-4 py-2 rounded-full uppercase tracking-wider block w-max shadow-sm">Starting ₦80,000</span>
+            </div>
+          </div>
+          
+          <div class="lg:w-[50%] mt-6 lg:mt-0 grid grid-cols-2 gap-4">
+            <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+              <img src="/images/homepage/custom-nail-art1.jpg" alt="Custom Nail Art" class="w-full h-full object-cover object-top rounded-lg group-hover:scale-105 transition-transform duration-700" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+            <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+              <img src="/images/homepage/custom-nail-art2.jpg" alt="Custom Nail Art" class="w-full h-full object-cover object-top rounded-lg group-hover:scale-105 transition-transform duration-700" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="services.html" class="inline-flex items-center justify-center text-center bg-pastel-pink text-deep-berry px-8 py-3.5 rounded-full text-xs font-semibold uppercase tracking-widest shadow-md hover:bg-dusty-rose hover:text-white transition-all duration-300">
+          View Full Service Menu
+        </a>
+      </div>
+    </section>
+
+    <!-- Testimonials Section (Break Symmetry Asymmetric Card Setup) -->
+    <section class="max-w-7xl mx-auto py-24 px-6 md:py-32 md:px-12 relative z-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+        <div class="max-w-xl space-y-4 reveal">
+          <span class="font-sans text-[11px] uppercase tracking-[0.25em] text-dusty-rose font-bold">03 — TESTIMONIALS</span>
+          <h2 class="font-serif text-3xl md:text-5xl font-light text-deep-berry tracking-tight">Real Girlies, Real Compliments</h2>
+        </div>
+        <div class="mt-4 md:mt-0 reveal">
+          <a href="contact.html#reviews-faq" class="font-sans text-xs font-bold uppercase tracking-[0.15em] text-deep-berry hover:text-dusty-rose flex items-center space-x-2">
+            <span>Read All 6 Testimonials</span>
+            <span>⟶</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Asymmetrical layout (different rotations and card widths, not a boring grid) -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        
+        <!-- Review 1 -->
+        <div class="md:col-span-5 glass-card p-8 rounded-2xl relative shadow-md rotate-[-1deg] hover:rotate-0 transition-transform duration-550 reveal">
+          <!-- Oversized Quote Mark Behind Text -->
+          <span class="absolute top-2 right-6 font-serif italic text-8xl text-blush-mid/25 pointer-events-none select-none">“</span>
+          
+          <div class="space-y-4 relative z-10">
+            <p class="font-serif italic text-lg leading-relaxed text-deep-berry">
+              "When it comes to Niru's sets I don't even worry, I can sleep and trust to wake up to a gorgeous set!"
+            </p>
+            <div class="flex items-center justify-between pt-4 border-t border-blush-mid/20">
+              <span class="font-sans text-xs font-bold text-deep-berry uppercase tracking-wide">Amara</span>
+              <span class="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-pastel-pink/15 text-deep-berry text-[9px] font-bold uppercase tracking-widest">
+                <span>⚡ Snapchat</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="md:col-span-7 glass-card p-8 rounded-2xl relative shadow-lg rotate-[1.5deg] hover:rotate-0 transition-transform duration-550 reveal bg-gradient-to-tr from-white to-blush-light/50">
+          <span class="absolute top-2 right-6 font-serif italic text-8xl text-blush-mid/25 pointer-events-none select-none">“</span>
+          
+          <div class="space-y-4 relative z-10">
+            <p class="font-serif italic text-xl leading-relaxed text-deep-berry">
+              "God, the nails don't even come off, it's been 6 weeks. I'm so obsessed! Compliments left, right, centre! We stuck like glue."
+            </p>
+            <div class="flex items-center justify-between pt-4 border-t border-blush-mid/20">
+              <span class="font-sans text-xs font-bold text-deep-berry uppercase tracking-wide">Precious</span>
+              <span class="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-pastel-pink/20 text-deep-berry text-[9px] font-bold uppercase tracking-widest">
+                <span>📸 Instagram</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="md:col-span-6 md:col-start-4 glass-card p-8 rounded-2xl relative shadow-md rotate-[-0.5deg] hover:rotate-0 transition-transform duration-550 reveal">
+          <span class="absolute top-2 right-6 font-serif italic text-8xl text-blush-mid/25 pointer-events-none select-none">“</span>
+          
+          <div class="space-y-4 relative z-10">
+            <p class="font-serif italic text-lg leading-relaxed text-deep-berry font-light">
+              "I'm a really indecisive babe but with NAILSBYNIRU I don't even need to use my brain 🥺. I just let her freestyle and decide and she gets me all the time."
+            </p>
+            <div class="flex items-center justify-between pt-4 border-t border-blush-mid/20">
+              <span class="font-sans text-xs font-bold text-deep-berry uppercase tracking-wide">dfwvanny</span>
+              <span class="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-pastel-pink/15 text-deep-berry text-[9px] font-bold uppercase tracking-widest">
+                <span>⚡ Snapchat</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="md:col-span-5 md:col-start-2 glass-card p-8 rounded-2xl relative shadow-md rotate-[0.5deg] hover:rotate-0 transition-transform duration-550 reveal">
+          <span class="absolute top-2 right-6 font-serif italic text-8xl text-blush-mid/25 pointer-events-none select-none">"</span>
+          
+          <div class="space-y-4 relative z-10">
+            <p class="font-serif italic text-lg leading-relaxed text-deep-berry font-light">
+              "Still so obsessed with this set, look at my hands everyday and I'm still in awe!✨"
+            </p>
+            <div class="flex items-center justify-between pt-4 border-t border-blush-mid/20">
+              <span class="font-sans text-xs font-bold text-deep-berry uppercase tracking-wide">Social weirdo!</span>
+              <span class="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-pastel-pink/15 text-deep-berry text-[9px] font-bold uppercase tracking-widest">
+                <span>⚡ Snapchat</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classes Promotional Banner (Blush-to-pink gradient + Grain) -->
+    <section class="max-w-7xl mx-auto py-16 px-6 md:px-12 mb-24 relative z-10 reveal">
+      <div class="relative rounded-3xl bg-gradient-to-br from-blush-light via-pastel-pink/30 to-blush-mid/40 p-10 md:p-16 overflow-hidden border border-blush-mid/20 shadow-lg text-deep-berry bg-noise flex flex-col md:flex-row md:items-center justify-between gap-8">
+        
+        <div class="space-y-4 max-w-xl">
+          <span class="font-sans text-[11px] uppercase tracking-[0.25em] text-dusty-rose font-bold block">04 — CLASSES</span>
+          <h2 class="font-serif text-3xl md:text-5xl font-light tracking-tight text-deep-berry">
+            Learn the craft.<br />Build your career.
+          </h2>
+          <p class="font-sans text-sm text-deep-berry/80 leading-relaxed font-normal">
+            Whether you are starting from zero or a working nail technician looking to upgrade your application speed and precision, Niru holds intensive, certified in-person training classes in Lagos.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+          <a href="classes.html" class="inline-flex items-center justify-center text-center bg-pastel-pink text-deep-berry font-sans font-semibold text-xs uppercase tracking-[0.2em] px-8 py-4 rounded-full hover:bg-dusty-rose hover:text-white hover:scale-[1.02] transform transition-all duration-300 shadow-md">
+            View Classes Menu
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Booking Invitation Banner (Clean White High-Contrast Section) -->
+    <section class="relative bg-white py-24 md:py-32 text-center text-text-dark z-10 border-t border-blush-mid/15 select-none reveal">
+      <div class="max-w-4xl mx-auto px-6 space-y-8 select-text">
+        <h2 class="font-serif text-4xl sm:text-5xl lg:text-7xl font-light text-text-dark tracking-tight leading-tight">
+          Your next sculpted set <br />is waiting.
+        </h2>
+        <p class="font-sans text-sm sm:text-base text-text-muted max-w-lg mx-auto font-light leading-relaxed">
+          Bookings are highly limited to absolute quality standards. We take a maximum of 5–6 clients per day. Tap below to reserve your date and choose your layout.
+        </p>
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="book.html" class="inline-flex items-center justify-center text-center w-full sm:w-auto bg-pastel-pink text-text-dark font-sans font-bold text-xs uppercase tracking-widest px-10 py-5 rounded-full hover:bg-deep-pink hover:text-white hover:scale-[1.03] transform transition-all duration-300 shadow-lg" style="border-radius: 9999px;">
+            Book Now
+          </a>
+          <a href="gallery.html" class="inline-flex items-center justify-center text-center w-full sm:w-auto border border-pastel-pink text-text-dark font-sans font-medium text-xs uppercase tracking-[0.2em] px-10 py-5 rounded-full hover:bg-pastel-pink/15 transition-all duration-300" style="border-radius: 9999px;">
+            View Design Gallery
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating Back To Top Button -->
+    <button id="back-to-top" class="fixed bottom-28 right-6 w-12 h-12 bg-white/90 backdrop-blur-md border border-blush-mid/40 rounded-full flex items-center justify-center text-deep-berry hover:text-dusty-rose transition-all duration-300 translate-y-24 opacity-0 z-50 shadow-md transform hover:scale-105" style="bottom: 96px; right: 24px; z-index: 50;" aria-label="Back to Top">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+      </svg>
+    </button>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2348137958600" target="_blank" rel="noopener noreferrer" class="fixed bottom-7 right-6 bg-[#25D366] text-white shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 animate-wa-pulse group flex items-center justify-center rounded-full z-[9999]" style="width: 56px; height: 56px;" aria-label="Chat with Niru on WhatsApp">
+      <!-- Custom Branded Tooltip -->
+      <span class="absolute right-16 top-1/2 -translate-y-1/2 glass-card border-blush-mid/30 text-deep-berry text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap shadow-sm font-medium">
+        Chat with Niru ✨
+      </span>
+      <svg class="w-7 h-7 flex-shrink-0 text-white" fill="currentColor" viewBox="0 0 24 24" style="width: 28px; height: 28px;">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.243 8.477 3.513 2.266 2.27 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.638 1.966 14.122.94 11.5.942 6.066.942 1.642 5.312 1.637 10.742c-.002 1.772.464 3.506 1.352 5.04l-.841 3.076 3.199-.824zm11.383-5.05c-.3-.15-1.764-.87-2.038-.97-.274-.1-.474-.15-.674.15-.2.3-.77.97-.945 1.17-.175.2-.35.225-.65.075-.3-.15-1.263-.465-2.407-1.485-.89-.794-1.49-1.775-1.665-2.075-.175-.3-.019-.462.13-.611.135-.135.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525C10.044 7.6 9.4 6.035 9.13 5.39c-.26-.63-.53-.54-.73-.55-.19-.01-.41-.01-.61-.01-.2 0-.53.075-.81.375-.28.3-1.07 1.05-1.07 2.56 0 1.51 1.1 2.97 1.25 3.17.15.2 2.165 3.31 5.245 4.64.733.317 1.306.505 1.751.646.737.234 1.41.201 1.942.122.593-.088 1.764-.72 2.014-1.415.25-.695.25-1.29.175-1.415-.075-.125-.275-.2-.575-.35z" />
+      </svg>
+    </a>
+
+    <!-- Footer Area (High Contrast Deep Berry background) -->
+    <footer class="bg-deep-pink text-white py-16 md:py-24 bg-noise relative z-10 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 sm:gap-16">
+        
+        <!-- col 1 logo -->
+        <div class="md:col-span-4 flex flex-col space-y-6">
+          <div class="flex flex-col">
+            <span class="font-serif text-3xl font-light tracking-wide text-white">With Love N</span>
+            <span class="font-sans text-[11px] uppercase tracking-[0.25em] text-pastel-pink mt-0.5 font-medium">Nails by Niru</span>
+          </div>
+          <p class="font-sans text-xs text-white/70 max-w-sm leading-relaxed">
+            "The Home of Clean, Sculpted Sets and the Soft-Girl Luxury Experience in Ajah & Lekki."
+          </p>
+          <!-- Social Icons -->
+          <div class="flex items-center space-x-5 pt-3">
+            <a href="https://www.instagram.com/nailsbyniru__?igsh=MThzaXEzZzU1ZDg3aA==" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pastel-pink hover:text-deep-berry transition-all duration-300" aria-label="With Love N on Instagram">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.snapchat.com/add/nailsbyniru" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pastel-pink hover:text-deep-berry transition-all duration-300" aria-label="With Love N on Snapchat">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 2.003c.795 0 3.842.215 5.351 2.916.541.97.456 2.629.388 3.953l-.008.156c-.005.083-.003.169.063.227.139.122.652.146 1.218.328.488.158.901.477.901.901 0 .564-.605.94-1.139 1.184.027.097.142.405.142.405.214.654-.072 1.099-.518 1.318-.084.041-.504.218-.504.218a3.7 3.7 0 0 1-.034.563c-.124.685-.61 1.187-1.467 1.498-.337.122-.787.252-1.354.388a4.847 4.847 0 0 0-.566.797c-.474.79-1.21 1.808-3.012 1.808-1.802 0-2.529-1.012-3.011-1.806a4.917 4.917 0 0 0-.567-.799c-.567-.136-1.017-.266-1.354-.388-.856-.31-1.343-.812-1.467-1.498a3.7 3.7 0 0 1-.034-.563s-.42-.177-.504-.218c-.446-.219-.732-.664-.518-1.318 0 0 .115-.308.142-.405-.534-.243-1.139-.62-1.139-1.184 0-.424.413-.743.901-.901.566-.182 1.079-.206 1.218-.328.066-.058.068-.144.063-.227l-.008-.156c-.068-1.324-.153-2.983.388-3.953 1.509-2.701 4.556-2.916 5.351-2.916z"/></svg>
+            </a>
+            <a href="https://tiktok.com/@_withlove_n" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pastel-pink hover:text-deep-berry transition-all duration-300" aria-label="With Love N on TikTok">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.84-.74-3.95-1.72-.1.65-.18 1.32-.18 1.98.01 1.88-.34 3.82-1.39 5.39-1.24 1.88-3.41 3.12-5.7 3.32-2.31.21-4.8-.46-6.42-2.12-1.81-1.84-2.52-4.66-1.89-7.18.57-2.28 2.22-4.27 4.46-5.11 1.25-.47 2.61-.63 3.93-.41.02 1.43-.02 2.87-.02 4.3-1.07-.15-2.22-.01-3.13.62-.91.63-1.46 1.75-1.45 2.88.02 1.15.58 2.28 1.51 2.93 1.04.73 2.47.78 3.52.12 1.13-.71 1.71-2.1 1.66-3.42V0h.15z"/></svg>
+            </a>
+            <a href="https://wa.me/2348137958600" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pastel-pink hover:text-deep-berry transition-all duration-300" aria-label="With Love N on WhatsApp">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.454L0 24zm6.59-4.846c1.6.95 3.18 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.59 1.97 14.121.944 11.493.944c-5.443 0-9.87 4.373-9.874 9.803-.001 2.009.526 3.975 1.524 5.71l-.1 1.731-.05.856.886-.237 1.778-.465zm11.215-6.817c-.301-.15-1.778-.876-2.053-.976-.275-.1-.475-.15-.675.15-.2.3-.775.976-.95 1.176-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.413-1.487-.892-.795-1.493-1.777-1.669-2.077-.175-.3-.018-.463.132-.612.135-.133.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.589-.492-.51-.675-.519-.175-.008-.375-.01-.575-.01-.2 0-.525.075-.8.375-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.22 5.11 4.52.714.31 1.272.495 1.706.634.717.228 1.37.195 1.886.118.575-.086 1.778-.726 2.028-1.427.25-.7.25-1.3.175-1.427-.075-.125-.275-.2-.575-.35z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- col 2 nav links -->
+        <div class="md:col-span-2 space-y-4">
+          <h4 class="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-white">Explore</h4>
+          <ul class="flex flex-col space-y-3 font-sans text-xs text-white/80">
+            <li><a href="index.html" class="hover:text-pastel-pink transition-colors">Home Base</a></li>
+            <li><a href="about.html" class="hover:text-pastel-pink transition-colors">Niru's Story</a></li>
+            <li><a href="services.html" class="hover:text-pastel-pink transition-colors">Services & Pricing</a></li>
+            <li><a href="gallery.html" class="hover:text-pastel-pink transition-colors">Gallery</a></li>
+            <li><a href="classes.html" class="hover:text-pastel-pink transition-colors font-medium">Certified Classes</a></li>
+          </ul>
+        </div>
+
+        <!-- col 3 connection -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-white">Studio Location</h4>
+          <p class="font-sans text-xs text-white/80 leading-relaxed">
+            Dipo Omotayo, <br />
+            Ajah Lekki, Addo Road, <br />
+            Lagos, Nigeria.
+          </p>
+          <div class="pt-2 flex flex-col space-y-1.5 text-xs text-white/80">
+            <a href="mailto:withloven6@gmail.com" class="hover:text-pastel-pink transition-colors">withloven6@gmail.com</a>
+            <a href="tel:+2348137958600" class="hover:text-pastel-pink transition-colors">+234 813 795 8600</a>
+          </div>
+        </div>
+
+        <!-- col 4 appointment times -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-white">Studio Hours</h4>
+          <p class="font-sans text-xs text-white/80 leading-relaxed">
+            Monday – Saturday <br />
+            8:00 AM – 7:00 PM
+          </p>
+          <p class="font-sans text-xs text-pastel-pink/90 italic leading-relaxed">
+            Home service appointments available across Ajah and Lekki.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-[11px] text-white/50 space-y-4 sm:space-y-0 select-none">
+        <p>&copy; 2023 With Love N. All rights reserved.</p>
+        <div class="flex items-center space-x-2">
+          <span>Made with love in Lagos</span>
+          <span class="text-pastel-pink">🤍</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Service Worker, PWA and Scroll Animations Script -->
+    <script type="module" src="/js/global.js"></script>
+    <script type="module">
+      // Minimal local code to ensure visual activation on index-specific scripts
+      import { registerScrollReveal } from '/js/global.js';
+      
+      document.addEventListener('DOMContentLoaded', () => {
+        // Run scroll hint button smooth action
+        const scrollHint = document.getElementById('scroll-hint');
+        if (scrollHint) {
+          scrollHint.addEventListener('click', () => {
+            window.scrollBy({ top: window.innerHeight - 80, behavior: 'smooth' });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

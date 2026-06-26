@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nail Classes | Nails by Niru</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Open Graph/Meta -->
+    <meta property="og:title" content="Nail Classes | Nails by Niru">
+    <meta property="og:description" content="Learn nail artistry hands-on with Niru — from prep and shaping to fine cartoon nail art. In-person training in Ajah Lekki, Lagos.">
+    <meta property="og:image" content="/images/backgrounds/class-bg.jpg">
+    <meta name="description" content="Elevate your salon skills or learn the craft of luxury nails from scratch. Certified masterclasses, lifetime mentor support, and executive starter kits in Lagos.">
+  </head>
+  <body class="bg-white text-text-dark bg-noise min-h-screen selection:bg-pastel-pink selection:text-deep-berry">
+    
+    <!-- Fixed Background Image -->
+    <div class="page-bg" style="background-image: url('/images/backgrounds/class-bg.jpg'); background-position: 65% center; background-size: cover;"></div>
+    <!-- Soft Warm Blush Overlay Gradient -->
+    <div class="fixed inset-0 bg-gradient-to-tr from-warm-cream/65 via-blush-light/55 to-warm-cream/60 -z-1 pointer-events-none"></div>
+
+    <!-- Page Loading Progress Bar -->
+    <div id="loading-bar" class="fixed top-0 left-0 h-1 bg-pastel-pink w-0 transition-all duration-300 z-[10000]"></div>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 py-6 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="group flex flex-col focus:outline-none">
+          <span class="font-serif text-2xl md:text-3xl font-light tracking-wide text-deep-berry leading-tight transition-colors group-hover:text-dusty-rose">With Love N</span>
+          <span class="font-sans text-[10px] md:text-xs uppercase tracking-[0.25em] text-dusty-rose -mt-0.5 font-medium transition-colors group-hover:text-deep-berry">Nails by Niru</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="hidden md:flex items-center space-x-10 text-xs font-semibold uppercase tracking-[0.2em] text-deep-berry/80">
+          <li><a href="index.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">Home</a></li>
+          <li><a href="about.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">About</a></li>
+          <li><a href="services.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">Services</a></li>
+          <li><a href="gallery.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">Gallery</a></li>
+          <li><a href="classes.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[1px] after:bg-pastel-pink after:scale-x-100 origin-left font-medium">Classes</a></li>
+          <li><a href="contact.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">Contact</a></li>
+          <li>
+            <a href="book.html" class="inline-flex items-center justify-center text-center bg-pastel-pink text-deep-berry px-6 py-2.5 rounded-full hover:bg-dusty-rose hover:text-white hover:scale-[1.03] transition-all duration-300 shadow-sm focus:ring-1 focus:ring-pastel-pink">Book Your Set</a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="menu-toggle" class="md:hidden text-deep-berry focus:outline-none p-2 relative z-50">
+          <svg id="hamburger-icon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 transition-transform duration-300 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-drawer" class="fixed inset-0 bg-deep-berry/40 backdrop-blur-md z-[9990] hidden transition-opacity duration-300 opacity-0">
+      <div class="fixed top-0 right-0 w-[80%] max-w-sm h-full bg-white shadow-2xl z-[9995] flex flex-col p-10 justify-between transition-transform duration-500 translate-x-full">
+        <!-- Drawer Links -->
+        <div class="flex flex-col space-y-8 pt-16">
+          <div class="border-b border-blush-mid/40 pb-4">
+            <span class="font-serif text-xl tracking-wide text-deep-berry block">With Love N</span>
+            <span class="font-sans text-[10px] uppercase tracking-widest text-dusty-rose font-medium">Lagos soft luxury design</span>
+          </div>
+          <ul class="flex flex-col space-y-6 text-sm font-bold uppercase tracking-[0.25em] text-deep-berry">
+            <li><a href="index.html" class="hover:text-dusty-rose block py-2 transition-all">Home</a></li>
+            <li><a href="about.html" class="hover:text-dusty-rose block py-2 transition-all">About</a></li>
+            <li><a href="services.html" class="hover:text-dusty-rose block py-2 transition-all">Services</a></li>
+            <li><a href="gallery.html" class="hover:text-dusty-rose block py-2 transition-all">Gallery</a></li>
+            <li><a href="classes.html" class="hover:text-dusty-rose block py-2 transition-all">Classes</a></li>
+            <li><a href="contact.html" class="hover:text-dusty-rose block py-2 transition-all">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <a href="book.html" class="flex items-center justify-center text-center w-full bg-pastel-pink text-deep-berry py-4 rounded-full font-semibold uppercase tracking-wider text-xs hover:bg-dusty-rose hover:text-white transition-colors shadow-md" style="border-radius: 9999px;">Book Your Set</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Editorial Header Block -->
+    <header class="pt-32 pb-8 px-6 md:px-12 select-none text-center">
+      <div class="max-w-3xl mx-auto space-y-4">
+        <h1 class="font-serif font-light text-4xl sm:text-5xl lg:text-6xl text-deep-berry tracking-tight">
+          Learn the Craft.
+        </h1>
+        <p class="font-sans text-sm md:text-base text-deep-berry/75 max-w-2xl mx-auto leading-relaxed">
+          Professional nail training for beginners and working artists. In-person, in Lagos.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Content Container Grid -->
+    <main class="max-w-7xl mx-auto px-6 md:px-12 pb-32">
+      
+      <!-- Section 1: Beginner Classes -->
+      <div class="mb-20 select-none">
+        <div class="max-w-3xl mb-12">
+          <span class="font-mono text-[10px] uppercase tracking-widest text-dusty-rose bg-blush-light inline-block px-3 py-1 rounded-full font-bold mb-3">SECTION 1 — BEGINNER CLASSES</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-deep-berry font-light tracking-tight">Start from Zero. Build Something Real.</h2>
+          <p class="font-sans text-xs sm:text-sm text-deep-berry/75 mt-3 leading-relaxed">
+            This is for you if you've never held a nail brush before — or if you've been watching and finally feel ready. Niru teaches you everything: nail prep, products, shapes, application, finish. By the end, you'll know how to do a proper set.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- Beginner Month 1 -->
+          <div class="glass-card p-6 md:p-8 rounded-3xl border border-blush-mid/15 flex flex-col justify-between bg-white/70">
+            <div class="space-y-4">
+              <span class="font-sans text-[9px] uppercase tracking-wider text-dusty-rose font-bold block">Complete Foundation</span>
+              <h3 class="font-serif text-2xl text-deep-berry font-light">1 Month Program</h3>
+              <p class="font-sans text-xs text-deep-berry/70 leading-relaxed">
+                Learn the core essentials: nail prep, shapes, and proper product application 3x a week.
+              </p>
+              <div class="border-t border-blush-mid/10 pt-4 pb-1">
+                <span class="block font-sans text-[10px] text-text-muted">Schedule Structure:</span>
+                <span class="font-sans text-xs font-semibold text-deep-berry">3x a week</span>
+              </div>
+            </div>
+            <div class="space-y-4 mt-6">
+              <div class="flex items-baseline justify-between">
+                <span class="text-xs font-sans text-deep-berry/70">Total Fee:</span>
+                <span class="font-sans text-2xl font-bold text-deep-berry">₦130,000</span>
+              </div>
+              <a href="#register-block" onclick="document.getElementById('class-select').value='beginner_1m'; document.getElementById('class-select').dispatchEvent(new Event('change'));" class="flex items-center justify-center text-center w-full bg-pastel-pink text-deep-berry py-3 rounded-full font-sans text-[10px] uppercase tracking-widest hover:bg-dusty-rose hover:text-white transition-all duration-300">
+                Select This Track 🎓
+              </a>
+            </div>
+          </div>
+
+          <!-- Beginner Month 2 -->
+          <div class="glass-card p-6 md:p-8 rounded-3xl border border-[#eeddd0] flex flex-col justify-between bg-gradient-to-b from-[#fffefe] to-[#f9f3ee] relative">
+            <div class="absolute -top-3 right-6 bg-dusty-rose text-white text-[8px] uppercase tracking-widest font-bold px-3 py-1 rounded-full shadow-sm">
+              Popular Choice
+            </div>
+            <div class="space-y-4">
+              <span class="font-sans text-[9px] uppercase tracking-wider text-dusty-rose font-bold block">Extended Practice</span>
+              <h3 class="font-serif text-2xl text-deep-berry font-light">2 Months Program</h3>
+              <p class="font-sans text-xs text-deep-berry/70 leading-relaxed">
+                Includes deeper hand-on mentoring, shape consistency, and speed improvement 3x a week.
+              </p>
+              <div class="border-t border-blush-mid/10 pt-4 pb-1">
+                <span class="block font-sans text-[10px] text-text-muted">Schedule Structure:</span>
+                <span class="font-sans text-xs font-semibold text-deep-berry">3x a week</span>
+              </div>
+            </div>
+            <div class="space-y-4 mt-6">
+              <div class="flex items-baseline justify-between">
+                <span class="text-xs font-sans text-deep-berry/70">Total Fee:</span>
+                <span class="font-sans text-2xl font-bold text-deep-berry">₦250,000</span>
+              </div>
+              <a href="#register-block" onclick="document.getElementById('class-select').value='beginner_2m'; document.getElementById('class-select').dispatchEvent(new Event('change'));" class="flex items-center justify-center text-center w-full bg-pastel-pink text-deep-berry py-3 rounded-full font-sans text-[10px] uppercase tracking-widest hover:bg-dusty-rose hover:text-white transition-all duration-300">
+                Select This Track 🎓
+              </a>
+            </div>
+          </div>
+
+          <!-- Beginner Month 3 -->
+          <div class="glass-card p-6 md:p-8 rounded-3xl border border-blush-mid/15 flex flex-col justify-between bg-white/70">
+            <div class="space-y-4">
+              <span class="font-sans text-[9px] uppercase tracking-wider text-dusty-rose font-bold block">Elite Professional Mastery</span>
+              <h3 class="font-serif text-2xl text-deep-berry font-light">3 Months Program</h3>
+              <p class="font-sans text-xs text-deep-berry/70 leading-relaxed">
+                Our most complete beginner track. Cover everything up to advanced art, clients practice, and business launch guidance.
+              </p>
+              <div class="border-t border-blush-mid/10 pt-4 pb-1">
+                <span class="block font-sans text-[10px] text-text-muted">Schedule Structure:</span>
+                <span class="font-sans text-xs font-semibold text-deep-berry">3x a week</span>
+              </div>
+            </div>
+            <div class="space-y-4 mt-6">
+              <div class="flex items-baseline justify-between">
+                <span class="text-xs font-sans text-deep-berry/70">Total Fee:</span>
+                <span class="font-sans text-2xl font-bold text-deep-berry">₦350,000</span>
+              </div>
+              <a href="#register-block" onclick="document.getElementById('class-select').value='beginner_3m'; document.getElementById('class-select').dispatchEvent(new Event('change'));" class="flex items-center justify-center text-center w-full bg-pastel-pink text-deep-berry py-3 rounded-full font-sans text-[10px] uppercase tracking-widest hover:bg-dusty-rose hover:text-white transition-all duration-300">
+                Select This Track 🎓
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Section 2: Upgrade Classes -->
+      <div class="mb-24 select-none">
+        <div class="max-w-3xl mb-12">
+          <span class="font-mono text-[10px] uppercase tracking-widest text-dusty-rose bg-blush-light inline-block px-3 py-1 rounded-full font-bold mb-3">SECTION 2 — UPGRADE CLASSES</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-deep-berry font-light tracking-tight">Already Doing Nails? Let's Take You Further.</h2>
+          <p class="font-sans text-xs sm:text-sm text-deep-berry/75 mt-3 leading-relaxed">
+            For nail techs who already work but want to sharpen their skills, learn new techniques, or add services to their menu. Focused, intensive, and built around where you already are.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
+          
+          <!-- Upgrade 2 Weeks -->
+          <div class="glass-card p-6 md:p-8 rounded-3xl border border-blush-mid/15 flex flex-col justify-between bg-white/70">
+            <div class="space-y-4">
+              <span class="font-sans text-[9px] uppercase tracking-wider text-dusty-rose font-bold block">Focused Technique Tune-up</span>
+              <h3 class="font-serif text-2xl text-deep-berry font-light">2 Weeks Upgrade</h3>
+              <p class="font-sans text-xs text-deep-berry/70 leading-relaxed">
+                Perfect if you want to sharpen your prep, fix your shaping, or get your acrylic mix right.
+              </p>
+              <div class="border-t border-blush-mid/10 pt-4 pb-1">
+                <span class="block font-sans text-[10px] text-text-muted">Schedule Structure:</span>
+                <span class="font-sans text-xs font-semibold text-deep-berry">3x a week</span>
+              </div>
+            </div>
+            <div class="space-y-4 mt-6">
+              <div class="flex items-baseline justify-between">
+                <span class="text-xs font-sans text-deep-berry/70">Total Fee:</span>
+                <span class="font-sans text-2xl font-bold text-deep-berry">₦150,000</span>
+              </div>
+              <a href="#register-block" onclick="document.getElementById('class-select').value='upgrade_2w'; document.getElementById('class-select').dispatchEvent(new Event('change'));" class="flex items-center justify-center text-center w-full bg-pastel-pink text-deep-berry py-3 rounded-full font-sans text-[10px] uppercase tracking-widest hover:bg-dusty-rose hover:text-white transition-all duration-300">
+                Select This Track 🎓
+              </a>
+            </div>
+          </div>
+
+          <!-- Upgrade 1 Month -->
+          <div class="glass-card p-6 md:p-8 rounded-3xl border border-blush-mid/15 flex flex-col justify-between bg-white/70">
+            <div class="space-y-4">
+              <span class="font-sans text-[9px] uppercase tracking-wider text-dusty-rose font-bold block">Advanced Artistry & Architecture</span>
+              <h3 class="font-serif text-2xl text-deep-berry font-light">1 Month Upgrade</h3>
+              <p class="font-sans text-xs text-deep-berry/70 leading-relaxed">
+                Learn cartoon custom painting, intricate encapsulation, flawless structure, and upscale pricing methods.
+              </p>
+              <div class="border-t border-blush-mid/10 pt-4 pb-1">
+                <span class="block font-sans text-[10px] text-text-muted">Schedule Structure:</span>
+                <span class="font-sans text-xs font-semibold text-deep-berry">3x a week</span>
+              </div>
+            </div>
+            <div class="space-y-4 mt-6">
+              <div class="flex items-baseline justify-between">
+                <span class="text-xs font-sans text-deep-berry/70">Total Fee:</span>
+                <span class="font-sans text-2xl font-bold text-deep-berry">₦250,000</span>
+              </div>
+              <a href="#register-block" onclick="document.getElementById('class-select').value='upgrade_1m'; document.getElementById('class-select').dispatchEvent(new Event('change'));" class="flex items-center justify-center text-center w-full bg-pastel-pink text-deep-berry py-3 rounded-full font-sans text-[10px] uppercase tracking-widest hover:bg-dusty-rose hover:text-white transition-all duration-300">
+                Select This Track 🎓
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Section 2: Core Perks & Completion Credentials -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-24 items-center">
+        
+        <!-- Left: Visual "Certificate of Artistry" representation of completion from Nails by Niru -->
+        <div class="glass-card p-8 rounded-3xl border border-blush-mid/10 bg-gradient-to-tr from-white to-blush-light h-96 relative overflow-hidden flex items-center justify-center shadow-md select-none">
+          <div class="absolute inset-0 opacity-5">
+            <div class="w-full h-full" style="background-image: radial-gradient(#9B1D63 1px, transparent 1px); background-size: 16px 16px;"></div>
+          </div>
+
+          <!-- Centered Elegant Certificate Frame -->
+          <div class="relative bg-white border-[3px] border-double border-dusty-rose/40 rounded-2xl p-8 max-w-sm mx-auto text-center space-y-4 shadow-xl select-none z-10 w-full">
+            <!-- Small logo stamp -->
+            <div class="w-10 h-10 rounded-full border border-dusty-rose/40 bg-blush-light/50 flex items-center justify-center mx-auto text-[10px] font-bold text-deep-berry tracking-tighter">N.N</div>
+            
+            <span class="block font-sans text-[9px] uppercase tracking-[0.25em] text-dusty-rose font-bold">Certificate of Artistry</span>
+            <h4 class="font-serif italic text-xl text-deep-berry font-light tracking-wide leading-tight">Class Completion</h4>
+            <div class="w-20 h-[1px] bg-dusty-rose/30 mx-auto"></div>
+            <p class="font-sans text-[11px] text-deep-berry/75 leading-relaxed font-medium">
+              I'll personally hand you this once you finish your training with me.
+            </p>
+            <span class="block font-serif text-[11px] text-deep-berry/70 font-medium">— Nails by Niru —</span>
+          </div>
+        </div>
+
+        <!-- Right: Textual detail benefits list of academy -->
+        <div id="academy-benefits" class="space-y-6">
+          <span class="font-sans text-[10px] uppercase tracking-[0.25em] text-dusty-rose font-bold block">WHAT YOU GET</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-deep-berry font-light tracking-tight">What's Included</h2>
+          
+          <p class="font-sans text-xs sm:text-sm text-deep-berry/75 leading-relaxed">
+            With Love N offers dedicated professional courses focused on master craftsmanship. Every program comes complete with high-end standards:
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start space-x-3 text-xs text-deep-berry/80 leading-relaxed">
+              <span class="text-base select-none">💅</span>
+              <div>
+                <strong>All techniques taught hands-on</strong> — Get real practical application with immediate feedback from Niru.
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 text-xs text-deep-berry/80 leading-relaxed">
+              <span class="text-base select-none">📚</span>
+              <div>
+                <strong>Practical training on real clients</strong> — Build real industry competence on physical human nails, not just plastic displays.
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 text-xs text-deep-berry/80 leading-relaxed">
+              <span class="text-base select-none">🎓</span>
+              <div>
+                <strong>Certificate upon completion</strong> — Receive your professional, certified credentials directly from Nails by Niru.
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 text-xs text-deep-berry/80 leading-relaxed">
+              <span class="text-base select-none">🛠️</span>
+              <div>
+                <strong>Tools & product guidance included</strong> — Master the chemical guidelines, optimal brushes, and files needed to support premium standards.
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 text-xs text-deep-berry/80 leading-relaxed">
+              <span class="text-base select-none">📍</span>
+              <div>
+                <strong>Online classes</strong> — Dipo Omotayo, Ajah Lekki, Addo Road, Lagos.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Section 3: Interactive Registration Form and Cost Calculator -->
+      <section id="register-block" class="scroll-mt-32">
+        <div class="text-center space-y-4 mb-16 select-none">
+          <span class="font-sans text-[11px] uppercase tracking-[0.25em] text-dusty-rose font-bold block">BOOK YOUR CLASS</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-deep-berry font-light tracking-tight">Secure Your Spot</h2>
+          <p class="font-sans text-xs sm:text-sm text-deep-berry/75 max-w-xl mx-auto leading-relaxed">
+            Fill in your details and pick your class below. I'll confirm everything with you directly on WhatsApp, including your deposit.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- LEFT: The Enrollment Interactive Form (col-span-7) -->
+          <form class="lg:col-span-7 space-y-8" id="academy-form">
+            
+            <!-- Class Choice & Kit Upgrades -->
+            <div class="glass-card p-6 md:p-8 rounded-3xl space-y-6 border border-blush-mid/15">
+              <div class="flex items-center space-x-3 border-b border-blush-mid/15 pb-4">
+                <span class="w-7 h-7 rounded-full bg-pastel-pink text-text-dark text-xs font-bold font-mono flex items-center justify-center">1</span>
+                <h3 class="font-serif text-lg md:text-xl text-deep-berry font-light">Course Pathway</h3>
+              </div>
+
+              <!-- Academy Course Selector -->
+              <div class="space-y-2">
+                <label for="class-select" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                  Select Certified Course <span class="text-pastel-pink">*</span>
+                </label>
+                <div class="relative">
+                  <select id="class-select" class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-xs text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none appearance-none cursor-pointer">
+                    <option value="">— Select a Course Track —</option>
+                    <option value="beginner_1m">Beginner Class (1 Month) — ₦130,000</option>
+                    <option value="beginner_2m">Beginner Class (2 Months) — ₦250,000</option>
+                    <option value="beginner_3m">Beginner Class (3 Months) — ₦350,000</option>
+                    <option value="upgrade_2w">Upgrade Class (2 Weeks) — ₦150,000</option>
+                    <option value="upgrade_1m">Upgrade Class (1 Month) — ₦250,000</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-deep-berry/70">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Student Demographics -->
+            <div class="glass-card p-6 md:p-8 rounded-3xl space-y-6 border border-blush-mid/15">
+              <div class="flex items-center space-x-3 border-b border-blush-mid/15 pb-4">
+                <span class="w-7 h-7 rounded-full bg-pastel-pink text-text-dark text-xs font-bold font-mono flex items-center justify-center">2</span>
+                <h3 class="font-serif text-lg md:text-xl text-deep-berry font-light">Student Information</h3>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Name -->
+                <div class="space-y-2">
+                  <label for="student-name" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                    Full Name <span class="text-pastel-pink">*</span>
+                  </label>
+                  <input type="text" id="student-name" placeholder="Folashade Coker" class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-xs text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none" />
+                </div>
+
+                <!-- Instagram -->
+                <div class="space-y-2">
+                  <label for="student-instagram" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                    Instagram Handle <span class="text-pastel-pink">*</span>
+                  </label>
+                  <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-dusty-rose text-xs font-medium">@</div>
+                    <input type="text" id="student-instagram" placeholder="folas_nails" class="pl-8 w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-xs text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact -->
+              <div class="space-y-2">
+                <label for="student-whatsapp" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                  WhatsApp Contact Number <span class="text-pastel-pink">*</span>
+                </label>
+                <input type="tel" id="student-whatsapp" placeholder="+234 813..." class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-xs text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none" />
+                <span class="block font-sans text-[10px] text-text-muted mt-0.5">Please specify country dial prefix. Niru shares certified manuals on WhatsApp.</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Previous Experience level -->
+                <div class="space-y-2">
+                  <label for="student-experience" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                    Current Skill Level <span class="text-pastel-pink">*</span>
+                  </label>
+                  <div class="relative">
+                    <select id="student-experience" class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-xs text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none appearance-none cursor-pointer">
+                      <option value="">— Select experience level —</option>
+                      <option value="Complete Beginner">Complete Beginner (No drill experience)</option>
+                      <option value="Self-Taught">Self-Taught (Still Finding My Footing)</option>
+                      <option value="Working Nail Artist">Working Artist (Looking to raise salon pricing)</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-deep-berry/70">
+                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Proposed timing -->
+                <div class="space-y-2">
+                  <label for="student-date" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                    Preferred Start Date <span class="text-pastel-pink">*</span>
+                  </label>
+                  <input type="date" id="student-date" class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-xs text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none cursor-pointer" />
+                </div>
+              </div>
+
+              <!-- Notes area -->
+              <div class="space-y-2">
+                <label for="student-notes" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                  Career Goals & Specific Focus Points
+                </label>
+                <textarea id="student-notes" rows="4" placeholder="What are your career goals after finishing certified training? Please outline specific focus points like cartoon painting or fast acrylic application beads..." class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-2xl p-4 text-xs text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none resize-none"></textarea>
+              </div>
+
+            </div>
+
+          </form>
+
+          <!-- RIGHT: LIVE PRICING ESTIMATION SLATE & PAYMENT REGIME (col-span-5) -->
+          <div class="lg:col-span-5 space-y-8">
+            
+            <!-- Live Calculated summary block -->
+            <div class="glass-card p-6 md:p-8 rounded-3xl border border-pastel-pink/20 bg-gradient-to-b from-white/95 to-blush-light/30 shadow-md">
+              <span class="font-sans text-[9px] uppercase tracking-[0.25em] text-dusty-rose font-bold block mb-1">Your Tuition Summary</span>
+              <h3 class="font-serif text-2xl text-deep-berry font-light">Your Estimate</h3>
+              
+              <div class="mt-6 space-y-4">
+                <!-- Item 1: Class cost -->
+                <div class="flex items-center justify-between text-xs pb-3 border-b border-blush-mid/15">
+                  <span id="quote-class-name" class="font-sans text-deep-berry/75">Select a Course Path</span>
+                  <span id="quote-class-price" class="font-mono font-medium text-deep-berry">₦0</span>
+                </div>
+
+                <!-- Total Estimation -->
+                <div class="flex items-baseline justify-between pt-3">
+                  <span class="font-serif text-lg text-deep-berry font-light">Total Tuition Fees</span>
+                  <span id="quote-academy-total" class="font-mono text-2xl font-bold text-deep-berry">₦0</span>
+                </div>
+
+                <!-- Tuition terms detail block -->
+                <div class="bg-blush-light/40 border border-blush-mid/15 p-4 rounded-2xl flex items-start space-x-2.5 mt-4">
+                  <span class="text-xs">🎓</span>
+                  <p class="font-sans text-[10px] text-deep-berry/75 leading-relaxed">
+                    <strong>Payment</strong>: A deposit is required to secure your class spot. The remaining balance is completed on Day 1 of class.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ACADEMY POLICIES CARD -->
+            <div class="glass-card p-6 md:p-8 rounded-3xl space-y-6 border border-blush-mid/15 bg-white/70">
+              <div class="border-b border-blush-mid/20 pb-3">
+                <h3 class="font-serif text-xl text-deep-berry font-light">Class Terms</h3>
+                <span class="block font-sans text-[9px] uppercase tracking-wider text-dusty-rose font-bold">Student Guidelines</span>
+              </div>
+
+              <ul class="space-y-4 font-sans text-[11px] md:text-xs text-deep-berry/80 leading-relaxed">
+                <li class="flex items-start space-x-2.5">
+                  <span class="text-pastel-pink text-xs mt-0.5">🌸</span>
+                  <div>
+                    <strong>Rescheduling</strong>: If you need to move your start date, just message me as early as possible so we can sort out a new date together.
+                  </div>
+                </li>
+                <li class="flex items-start space-x-2.5">
+                  <span class="text-pastel-pink text-xs mt-0.5">🌸</span>
+                  <div>
+                    <strong>Small Class Sizes</strong>: I keep my classes small so every student gets proper hands-on attention from me.
+                  </div>
+                </li>
+                <li class="flex items-start space-x-2.5">
+                  <span class="text-pastel-pink text-xs mt-0.5">🌸</span>
+                  <div>
+                    <strong>Keep It Clean</strong>: I take hygiene seriously, so I'll need you to follow basic sanitary practices (alcohol wipes, proper skin protection) at the table during training.
+                  </div>
+                </li>
+              </ul>
+
+              <!-- Checkbox verification -->
+              <div class="pt-4 border-t border-blush-mid/20">
+                <label class="flex items-start space-x-3 cursor-pointer select-none">
+                  <input type="checkbox" id="accept-academy-policies" class="w-4 h-4 rounded text-deep-berry border-blush-mid/45 focus:ring-pastel-pink mt-0.5 bg-white/90" />
+                  <span class="font-sans text-xs text-deep-berry/90 font-medium">
+                    I accept the class terms, deposit rules & scheduling guides. <span class="text-pastel-pink">*</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Payment Details Block -->
+            <div class="mb-6 p-6 rounded-2xl bg-deep-pink text-white shadow-xl border border-blush-mid/10">
+              <h4 class="font-serif text-lg text-white mb-4 text-center tracking-wide">Reserve Your Class Spot</h4>
+              <div class="space-y-3 font-mono text-sm">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                  <span class="text-white/70 text-xs">BANK</span>
+                  <span class="font-medium tracking-wide text-white">Nom Bank</span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-black/10 p-3 rounded-lg border border-white/10 gap-2">
+                  <span class="text-white/70 text-xs">ACCOUNT NUMBER</span>
+                  <div class="flex items-center justify-between sm:justify-end gap-3 w-full sm:w-auto">
+                    <span class="font-bold text-[15px] tracking-wider text-white">5965559596</span>
+                    <button type="button" onclick="copyAccountNumber('5965559596', this)" class="bg-white/20 hover:bg-white/30 text-white px-2.5 py-1 rounded text-xs transition-colors font-sans focus:outline-none flex items-center justify-center min-w-[50px] font-semibold">Copy</button>
+                  </div>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                  <span class="text-white/70 text-xs shrink-0">ACCOUNT NAME</span>
+                  <span class="font-medium tracking-wide sm:text-right break-words text-white overflow-hidden text-ellipsis">Cowrywisefina/treasure</span>
+                </div>
+              </div>
+              <p class="font-sans text-xs text-white/70 text-center mt-5 leading-relaxed">
+                Pay a deposit to secure your place. Send proof of payment on WhatsApp.
+              </p>
+            </div>
+
+            <!-- Action buttons submitting details to Niru -->
+            <div class="space-y-4">
+              <button type="submit" id="academy-submit-btn" disabled class="w-full flex items-center justify-center text-center bg-pastel-pink/50 text-deep-berry/60 py-4 rounded-full font-serif text-base tracking-widest cursor-not-allowed transition-all duration-300 shadow-md">
+                Book a Class via WhatsApp 💬
+              </button>
+              <p class="font-sans text-[10px] text-text-muted text-center leading-relaxed px-4">
+                This sends your details straight to my WhatsApp. I'll reply to confirm your spot and deposit.
+              </p>
+              <div id="academy-error-message" class="hidden font-sans text-xs text-red-600 bg-red-50 text-center py-2 px-4 rounded-xl"></div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Floating Back To Top Button -->
+    <button id="back-to-top" class="fixed bottom-28 right-6 w-12 h-12 bg-white/90 backdrop-blur-md border border-blush-mid/40 rounded-full flex items-center justify-center text-deep-berry hover:text-dusty-rose transition-all duration-300 translate-y-24 opacity-0 z-50 shadow-md transform hover:scale-105" style="bottom: 96px; right: 24px; z-index: 50;" aria-label="Back to Top">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+      </svg>
+    </button>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2348137958600" target="_blank" rel="noopener noreferrer" class="fixed bottom-7 right-6 bg-[#25D366] text-white shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 animate-wa-pulse group flex items-center justify-center rounded-full z-[9999]" style="width: 56px; height: 56px;" aria-label="Chat with Niru on WhatsApp">
+      <!-- Custom Branded Tooltip -->
+      <span class="absolute right-16 top-1/2 -translate-y-1/2 glass-card border-blush-mid/30 text-deep-berry text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap shadow-sm font-medium">
+        Chat with Niru ✨
+      </span>
+      <svg class="w-7 h-7 flex-shrink-0 text-white" fill="currentColor" viewBox="0 0 24 24" style="width: 28px; height: 28px;">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.243 8.477 3.513 2.266 2.27 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.638 1.966 14.122.94 11.5.942 6.066.942 1.642 5.312 1.637 10.742c-.002 1.772.464 3.506 1.352 5.04l-.841 3.076 3.199-.824zm11.383-5.05c-.3-.15-1.764-.87-2.038-.97-.274-.1-.474-.15-.674.15-.2.3-.77.97-.945 1.17-.175.2-.35.225-.65.075-.3-.15-1.263-.465-2.407-1.485-.89-.794-1.49-1.775-1.665-2.075-.175-.3-.019-.462.13-.611.135-.135.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525C10.044 7.6 9.4 6.035 9.13 5.39c-.26-.63-.53-.54-.73-.55-.19-.01-.41-.01-.61-.01-.2 0-.53.075-.81.375-.28.3-1.07 1.05-1.07 2.56 0 1.51 1.1 2.97 1.25 3.17.15.2 2.165 3.31 5.245 4.64.733.317 1.306.505 1.751.646.737.234 1.41.201 1.942.122.593-.088 1.764-.72 2.014-1.415.25-.695.25-1.29.175-1.415-.075-.125-.275-.2-.575-.35z" />
+      </svg>
+    </a>
+
+    <!-- Footer Area (Identical branding alignment) -->
+    <footer class="bg-deep-pink text-white py-16 md:py-24 bg-noise relative z-10 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 sm:gap-16">
+        
+        <!-- col 1 logo -->
+        <div class="md:col-span-4 flex flex-col space-y-6">
+          <div class="flex flex-col">
+            <span class="font-serif text-3xl font-light tracking-wide text-white">With Love N</span>
+            <span class="font-sans text-[11px] uppercase tracking-[0.25em] text-pastel-pink mt-0.5 font-medium">Nails by Niru</span>
+          </div>
+          <p class="font-sans text-xs text-white/70 max-w-sm leading-relaxed">
+            "The Home of Clean, Sculpted Sets and the Soft-Girl Luxury Experience in Ajah & Lekki."
+          </p>
+          <div class="flex items-center space-x-5 pt-3">
+            <a href="https://www.instagram.com/nailsbyniru__?igsh=MThzaXEzZzU1ZDg3aA==" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pastel-pink hover:text-deep-berry transition-all duration-300" aria-label="With Love N on Instagram">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.snapchat.com/add/nailsbyniru" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pastel-pink hover:text-deep-berry transition-all duration-300" aria-label="With Love N on Snapchat">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 2.003c.795 0 3.842.215 5.351 2.916.541.97.456 2.629.388 3.953l-.008.156c-.005.083-.003.169.063.227.139.122.652.146 1.218.328.488.158.901.477.901.901 0 .564-.605.94-1.139 1.184.027.097.142.405.142.405.214.654-.072 1.099-.518 1.318-.084.041-.504.218-.504.218a3.7 3.7 0 0 1-.034.563c-.124.685-.61 1.187-1.467 1.498-.337.122-.787.252-1.354.388a4.847 4.847 0 0 0-.566.797c-.474.79-1.21 1.808-3.012 1.808-1.802 0-2.529-1.012-3.011-1.806a4.917 4.917 0 0 0-.567-.799c-.567-.136-1.017-.266-1.354-.388-.856-.31-1.343-.812-1.467-1.498a3.7 3.7 0 0 1-.034-.563s-.42-.177-.504-.218c-.446-.219-.732-.664-.518-1.318 0 0 .115-.308.142-.405-.534-.243-1.139-.62-1.139-1.184 0-.424.413-.743.901-.901.566-.182 1.079-.206 1.218-.328.066-.058.068-.144.063-.227l-.008-.156c-.068-1.324-.153-2.983.388-3.953 1.509-2.701 4.556-2.916 5.351-2.916z"/></svg>
+            </a>
+            <a href="https://tiktok.com/@_withlove_n" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pastel-pink hover:text-deep-berry transition-all duration-300" aria-label="With Love N on TikTok">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.84-.74-3.95-1.72-.1.65-.18 1.32-.18 1.98.01 1.88-.34 3.82-1.39 5.39-1.24 1.88-3.41 3.12-5.7 3.32-2.31.21-4.8-.46-6.42-2.12-1.81-1.84-2.52-4.66-1.89-7.18.57-2.28 2.22-4.27 4.46-5.11 1.25-.47 2.61-.63 3.93-.41.02 1.43-.02 2.87-.02 4.3-1.07-.15-2.22-.01-3.13.62-.91.63-1.46 1.75-1.45 2.88.02 1.15.58 2.28 1.51 2.93 1.04.73 2.47.78 3.52.12 1.13-.71 1.71-2.1 1.66-3.42V0h.15z"/></svg>
+            </a>
+            <a href="https://wa.me/2348137958600" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pastel-pink hover:text-deep-berry transition-all duration-300" aria-label="With Love N on WhatsApp">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.454L0 24zm6.59-4.846c1.6.95 3.18 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.59 1.97 14.121.944 11.493.944c-5.443 0-9.87 4.373-9.874 9.803-.001 2.009.526 3.975 1.524 5.71l-.1 1.731-.05.856.886-.237 1.778-.465zm11.215-6.817c-.301-.15-1.778-.876-2.053-.976-.275-.1-.475-.15-.675.15-.2.3-.775.976-.95 1.176-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.413-1.487-.892-.795-1.493-1.777-1.669-2.077-.175-.3-.018-.463.132-.612.135-.133.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.589-.492-.51-.675-.519-.175-.008-.375-.01-.575-.01-.2 0-.525.075-.8.375-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.22 5.11 4.52.714.31 1.272.495 1.706.634.717.228 1.37.195 1.886.118.575-.086 1.778-.726 2.028-1.427.25-.7.25-1.3.175-1.427-.075-.125-.275-.2-.575-.35z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- col 2 links -->
+        <div class="md:col-span-2 space-y-4">
+          <h4 class="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-white">Explore</h4>
+          <ul class="flex flex-col space-y-3 font-sans text-xs text-white/80">
+            <li><a href="index.html" class="hover:text-pastel-pink transition-colors">Home Base</a></li>
+            <li><a href="about.html" class="hover:text-pastel-pink transition-colors">Niru's Story</a></li>
+            <li><a href="services.html" class="hover:text-pastel-pink transition-colors">Services & Pricing</a></li>
+            <li><a href="gallery.html" class="hover:text-pastel-pink transition-colors">Gallery</a></li>
+            <li><a href="classes.html" class="hover:text-pastel-pink transition-colors font-medium">Certified Classes</a></li>
+          </ul>
+        </div>
+
+        <!-- col 3 connection -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-white">Studio Location</h4>
+          <p class="font-sans text-xs text-white/80 leading-relaxed">
+            Dipo Omotayo, <br />
+            Ajah Lekki, Addo Road, <br />
+            Lagos, Nigeria.
+          </p>
+          <div class="pt-2 flex flex-col space-y-1.5 text-xs text-white/80">
+            <a href="mailto:withloven6@gmail.com" class="hover:text-pastel-pink transition-colors">withloven6@gmail.com</a>
+            <a href="tel:+2348137958600" class="hover:text-pastel-pink transition-colors">+234 813 795 8600</a>
+          </div>
+        </div>
+
+        <!-- col 4 studio hours -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-white">Studio Hours</h4>
+          <p class="font-sans text-xs text-white/80 leading-relaxed">
+            Wednesday – Monday <br />
+            8:00 AM – 7:00 PM
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-[11px] text-white/50 space-y-4 sm:space-y-0 select-none">
+        <p>&copy; 2023 With Love N. All rights reserved.</p>
+        <p>Made with love in Lagos <span class="text-pastel-pink">🤍</span></p>
+      </div>
+    </footer>
+
+    <!-- Global Nav script & Interactive certified classes scripts -->
+    <script type="module" src="/js/global.js"></script>
+    <script type="module" src="/js/classes.js"></script>
+  </body>
+</html>

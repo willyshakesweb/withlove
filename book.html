@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Slot | Nails by Niru</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Open Graph/Meta -->
+    <meta property="og:title" content="With Love N | Secure Your Luxury Nail Set Slot">
+    <meta property="og:description" content="Book personal sets in advance with Niru. Interactive builder calculates prices based on length, shapes and cartoon design details. Ajah Lekki Lagos.">
+    <meta property="og:image" content="/images/backgrounds/booking-bg.jpg">
+    <meta name="description" content="Secure your custom hand-sculpted nail appointment in Ajah Lekki, Lagos. Real-time customized price estimation on acrylics, gels, shapes and premium hand art.">
+  </head>
+  <body class="bg-white text-text-dark bg-noise min-h-screen selection:bg-pastel-pink selection:text-deep-berry">
+    
+    <!-- Fixed Background Image -->
+    <div class="page-bg" style="background-image: url('/images/backgrounds/booking-bg.jpg'); background-position: center 30%; background-size: cover;"></div>
+    <!-- Soft White Overlay -->
+    <div class="fixed inset-0 bg-white/80 -z-1 pointer-events-none"></div>
+
+    <!-- Page Loading Progress Bar -->
+    <div id="loading-bar" class="fixed top-0 left-0 h-1 bg-pastel-pink w-0 transition-all duration-300 z-[10000]"></div>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 py-6 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="group flex flex-col focus:outline-none">
+          <span class="font-serif text-2xl md:text-3xl font-light tracking-wide text-deep-berry leading-tight transition-colors group-hover:text-dusty-rose">With Love N</span>
+          <span class="font-sans text-[10px] md:text-xs uppercase tracking-[0.25em] text-dusty-rose -mt-0.5 font-medium transition-colors group-hover:text-deep-berry">Nails by Niru</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="hidden md:flex items-center space-x-10 text-xs font-semibold uppercase tracking-[0.2em] text-deep-berry/80">
+          <li><a href="index.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">Home</a></li>
+          <li><a href="about.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">About</a></li>
+          <li><a href="services.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">Services</a></li>
+          <li><a href="gallery.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">Gallery</a></li>
+          <li><a href="classes.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300 hidden lg:inline-block">Classes</a></li>
+          <li><a href="contact.html" class="hover:text-dusty-rose transition-all relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-pastel-pink after:scale-x-0 hover:after:scale-x-100 hover:after:w-full after:transition-all after:duration-300">Contact</a></li>
+          <li>
+            <a href="book.html" class="inline-flex items-center justify-center text-center bg-pastel-pink text-deep-berry px-6 py-2.5 rounded-full hover:bg-dusty-rose hover:text-white hover:scale-[1.03] transition-all duration-300 shadow-sm focus:ring-1 focus:ring-pastel-pink">Book Your Set</a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="menu-toggle" class="md:hidden text-deep-berry focus:outline-none p-2 relative z-50">
+          <svg id="hamburger-icon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 transition-transform duration-300 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-drawer" class="fixed inset-0 bg-deep-berry/40 backdrop-blur-md z-[9990] hidden transition-opacity duration-300 opacity-0">
+      <div class="fixed top-0 right-0 w-[80%] max-w-sm h-full bg-white shadow-2xl z-[9995] flex flex-col p-10 justify-between transition-transform duration-500 translate-x-full">
+        <!-- Drawer Links -->
+        <div class="flex flex-col space-y-8 pt-16">
+          <div class="border-b border-blush-mid/40 pb-4">
+            <span class="font-serif text-xl tracking-wide text-deep-berry block">With Love N</span>
+            <span class="font-sans text-[10px] uppercase tracking-widest text-dusty-rose font-medium">Lagos soft luxury design</span>
+          </div>
+          <ul class="flex flex-col space-y-6 text-sm font-bold uppercase tracking-[0.25em] text-deep-berry">
+            <li><a href="index.html" class="hover:text-dusty-rose block py-2 transition-all">Home</a></li>
+            <li><a href="about.html" class="hover:text-dusty-rose block py-2 transition-all">About</a></li>
+            <li><a href="services.html" class="hover:text-dusty-rose block py-2 transition-all">Services</a></li>
+            <li><a href="gallery.html" class="hover:text-dusty-rose block py-2 transition-all">Gallery</a></li>
+            <li><a href="classes.html" class="hover:text-dusty-rose block py-2 transition-all">Classes</a></li>
+            <li><a href="contact.html" class="hover:text-dusty-rose block py-2 transition-all">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <a href="book.html" class="flex items-center justify-center text-center w-full bg-pastel-pink text-deep-berry py-4 rounded-full font-semibold uppercase tracking-wider text-xs hover:bg-dusty-rose hover:text-white transition-colors shadow-md" style="border-radius: 9999px;">Book Your Set</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Editorial Header Block -->
+    <header class="pt-32 pb-8 px-6 md:px-12 select-none text-center">
+      <div class="max-w-3xl mx-auto space-y-4">
+        <span class="font-sans text-[11px] uppercase tracking-[0.25em] text-dusty-rose font-bold">01 — BOOKING</span>
+        <h1 class="font-serif font-light text-4xl sm:text-5xl lg:text-7xl text-deep-berry tracking-tight">
+          Secure Your Slot
+        </h1>
+        <p class="font-sans text-sm md:text-base text-deep-berry/75 max-w-2xl mx-auto leading-relaxed">
+          Ready to experience unhurried premium craftsmanship? Craft your dream set properties below. Your choices help estimate the cost instantly before formulating a secure booking conversation with Niru over WhatsApp.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Dynamic Interface -->
+    <main class="max-w-7xl mx-auto px-6 md:px-12 pb-32">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- LEFT: THE COMPREHENSIVE INTERACTIVE BOOKING FORM (col-span-7) -->
+        <form class="lg:col-span-7 space-y-8" id="booking-form">
+          
+          <!-- STEP 1: SERVICE CATEGORY & CHOICE -->
+          <div class="glass-card relative z-50 p-6 md:p-8 rounded-3xl space-y-6 border border-blush-mid/15">
+            <div class="flex items-center space-x-3">
+              <span class="w-7 h-7 rounded-full bg-pastel-pink text-text-dark text-xs font-bold font-mono flex items-center justify-center">1</span>
+              <h2 class="font-serif text-xl md:text-2xl text-deep-berry font-light">Service Selections</h2>
+            </div>
+            
+            <!-- Category Selector Buttons -->
+            <div class="flex w-full sm:w-max max-w-full items-center space-x-1 bg-blush-light/50 p-1 rounded-full">
+              <button type="button" id="cat-nails-btn" class="flex-1 sm:flex-initial inline-flex items-center justify-center text-center px-3 sm:px-6 py-2.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer">
+                Nail Services 💅
+              </button>
+              <button type="button" id="cat-toes-btn" class="flex-1 sm:flex-initial inline-flex items-center justify-center text-center px-3 sm:px-6 py-2.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer">
+                Toe Services 👣
+              </button>
+            </div>
+
+            <!-- Service Dropdown Selector -->
+            <div class="space-y-2">
+              <label class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                Select Set Package <span class="text-pastel-pink">*</span>
+              </label>
+              <div class="relative" id="custom-dropdown-container">
+                <!-- Trigger Button -->
+                <button type="button" id="service-dropdown-trigger" class="w-full flex items-center justify-between bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-sm text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none transition-all duration-300 cursor-pointer">
+                  <span id="selected-service-text" class="text-deep-berry/50">Select dynamic services...</span>
+                  <svg id="dropdown-arrow-icon" class="fill-current h-4 w-4 text-deep-berry/70 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                  </svg>
+                </button>
+                
+                <!-- Dropdown List Panel -->
+                <div id="service-dropdown-list" class="hidden absolute left-0 right-0 mt-1.5 bg-white border border-blush-mid/30 rounded-2xl shadow-xl z-50 max-h-[310px] overflow-y-auto transition-all duration-300">
+                  <div class="p-1.5 space-y-1" id="dropdown-options-container">
+                    <!-- Dynamic styled option buttons generated by JS -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 2: CUSTOM NAIL BLUESPRINTS (Acrylic properties & upload dropzone) -->
+          <div id="nails-custom-fields" class="glass-card relative z-40 p-6 md:p-8 rounded-3xl space-y-6 border border-blush-mid/15 transition-all duration-500">
+            <div class="flex items-center space-x-3">
+              <span class="w-7 h-7 rounded-full bg-pastel-pink text-text-dark text-xs font-bold font-mono flex items-center justify-center">2</span>
+              <h2 class="font-serif text-xl md:text-2xl text-deep-berry font-light">Custom Sculpt Properties</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              
+              <!-- Length -->
+              <div class="space-y-2">
+                <label for="length-select" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                  Nail Length
+                </label>
+                <div class="relative">
+                  <select id="length-select" class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-sm text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none appearance-none cursor-pointer">
+                    <option value="Short">Short Set (+₦0)</option>
+                    <option value="Medium">Medium Set (+₦5,000)</option>
+                    <option value="Long" selected>Long Set (+₦10,000)</option>
+                    <option value="Extra Long">Extra Long Set (+₦15,000)</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-deep-berry/70">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Shape -->
+              <div class="space-y-2">
+                <label for="shape-select" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                  Nail Shape
+                </label>
+                <div class="relative">
+                  <select id="shape-select" class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-sm text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none appearance-none cursor-pointer">
+                    <option value="Almond" selected>Almond Shape</option>
+                    <option value="Square">Square Shape</option>
+                    <option value="Stiletto">Stiletto Shape</option>
+                    <option value="Duck">Flare Duck Shape</option>
+                    <option value="Coffin">Coffin Shape</option>
+                    <option value="Oval">Oval Shape</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-deep-berry/70">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Art Complexity -->
+              <div class="space-y-2">
+                <label for="art-select" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                  Art Blueprint Complexity
+                </label>
+                <div class="relative">
+                  <select id="art-select" class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-sm text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none appearance-none cursor-pointer">
+                    <option value="None" selected>None (Plain Classic Set)</option>
+                    <option value="Medium">Medium Art (+₦10,000)</option>
+                    <option value="Complex">Complex Hand Art (+₦20,000)</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-deep-berry/70">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- DRAG & DROP DESIGN INSPIRATION FILES UPLOAD -->
+            <div class="space-y-2.5">
+              <span class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                Design Inspiration Picture (Optional)
+              </span>
+              
+              <!-- Upload Area Box -->
+              <div id="dropzone" class="border-2 border-dashed border-blush-mid/60 hover:border-deep-berry bg-white/40 rounded-2xl p-6 text-center cursor-pointer transition-colors duration-300 select-none space-y-2 group">
+                <div class="flex items-center justify-center text-dusty-rose group-hover:scale-105 transition-transform duration-300">
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <div class="space-y-1">
+                  <p class="font-sans text-xs font-medium text-deep-berry">
+                    Drag and drop your reference screenshot here, or <span class="text-dusty-rose underline">browse files</span>
+                  </p>
+                  <p class="font-sans text-[10px] text-text-muted">
+                    Supports high resolution JPG, PNG, JPEG formats
+                  </p>
+                </div>
+                <!-- Hidden native files input -->
+                <input type="file" id="reference-file" accept="image/*" class="hidden" />
+              </div>
+
+              <!-- Uploaded Thumb Preview Block -->
+              <div id="file-preview" class="hidden bg-white/70 border border-blush-mid/40 p-4 rounded-2xl flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                  <div class="w-14 h-14 rounded-lg overflow-hidden border border-blush-mid/35 flex-shrink-0">
+                    <img id="preview-img" src="" alt="Blueprint preview" class="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <span class="block font-sans text-xs font-semibold text-deep-berry">Reference Image Attached</span>
+                    <span class="block font-sans text-[10px] text-text-muted">Drafted template is ready to append.</span>
+                  </div>
+                </div>
+                <button type="button" id="remove-img" class="text-xs font-bold uppercase tracking-widest text-deep-berry/70 hover:text-red-700 hover:scale-105 transition-all focus:outline-none py-2 px-3 border border-blush-mid/30 rounded-lg">
+                  Remove File
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- STEP 3: SELECT STUDIO SCHEDULE SLOTS -->
+          <div class="glass-card relative z-30 p-6 md:p-8 rounded-3xl space-y-6 border border-blush-mid/15">
+            <div class="flex items-center space-x-3">
+              <span class="w-7 h-7 rounded-full bg-pastel-pink text-text-dark text-xs font-bold font-mono flex items-center justify-center">3</span>
+              <h2 class="font-serif text-xl md:text-2xl text-deep-berry font-light">Proposed Slot Time</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+              
+              <!-- Calendar Date -->
+              <div class="md:col-span-5 space-y-2">
+                <label for="date-input" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                  Select Date <span class="text-pastel-pink">*</span>
+                </label>
+                <input type="date" id="date-input" class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-sm text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none cursor-pointer" />
+                <span id="date-error" class="hidden font-sans text-[11px] text-red-600 font-semibold block"></span>
+                <span class="block font-sans text-[10px] text-text-muted">Sundays are fully resting periods.</span>
+              </div>
+
+              <!-- Interactive Time Slot Grid -->
+              <div class="md:col-span-7 space-y-2.5">
+                <label class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                  Select Unhurried Time Frame <span class="text-pastel-pink">*</span>
+                </label>
+                
+                <div id="time-slots" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <!-- Injected via book.js script -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- STEP 4: CONTACT & DETAILS -->
+          <div class="glass-card relative z-20 p-6 md:p-8 rounded-3xl space-y-6 border border-blush-mid/15">
+            <div class="flex items-center space-x-3">
+              <span class="w-7 h-7 rounded-full bg-pastel-pink text-text-dark text-xs font-bold font-mono flex items-center justify-center">4</span>
+              <h2 class="font-serif text-xl md:text-2xl text-deep-berry font-light">Client Details</h2>
+            </div>
+
+            <!-- Two Columns -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label for="client-name" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                  Full Name <span class="text-pastel-pink">*</span>
+                </label>
+                <input type="text" id="client-name" placeholder="Laide Johnson" class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-sm text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none" />
+              </div>
+              
+              <div class="space-y-2">
+                <label for="client-instagram" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                  Instagram Handle <span class="text-pastel-pink">*</span>
+                </label>
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-dusty-rose text-xs font-medium">@</div>
+                  <input type="text" id="client-instagram" placeholder="laide_xo" class="pl-8 w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-sm text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none" />
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <label for="client-whatsapp" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                WhatsApp Phone Number <span class="text-pastel-pink">*</span>
+              </label>
+              <input type="tel" id="client-whatsapp" placeholder="+234 812..." class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-xl px-4 py-3.5 text-sm text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none" />
+              <span class="block font-sans text-[10px] text-text-muted mt-0.5">Please include country prefix (e.g. +234). Niru coordinates secure details here.</span>
+            </div>
+
+            <div class="space-y-2">
+              <label for="notes-area" class="block font-sans text-xs font-semibold uppercase tracking-wider text-deep-berry/90">
+                Additional Comments / Custom Inquiries
+              </label>
+              <textarea id="notes-area" rows="4" placeholder="If you want bespoke character designs, detailed crystal layout, custom sizes or have questions, please type them here..." class="w-full bg-pastel-pink/10 border border-pastel-pink/50 rounded-2xl p-4 text-sm text-deep-berry font-sans font-medium focus:ring-1 focus:ring-pastel-pink focus:outline-none resize-none"></textarea>
+            </div>
+          </div>
+
+        </form>
+
+        <!-- RIGHT: LIVE PRICING INTERACTIVE SLATE & POLICIES (col-span-5) -->
+        <div class="lg:col-span-5 space-y-8">
+          
+          <!-- LIVE ESTIMATED QUOTE DYNAMIC OVERVIEW -->
+          <div class="glass-card p-6 md:p-8 rounded-3xl border border-pastel-pink/20 bg-gradient-to-b from-white/95 to-blush-light/30 shadow-md">
+            <span class="font-sans text-[9px] uppercase tracking-[0.25em] text-dusty-rose font-bold block mb-1">Your Custom Live Summary</span>
+            <h3 class="font-serif text-2xl text-deep-berry font-light">Estimate Blueprint</h3>
+            
+            <div class="mt-6 space-y-4">
+              <!-- Item 1: Base service -->
+              <div class="flex items-center justify-between text-xs pb-3 border-b border-blush-mid/15">
+                <span id="quote-base-service" class="font-sans text-deep-berry/75">Acrylic French</span>
+                <span id="quote-base-price" class="font-mono font-medium text-deep-berry">₦15,000</span>
+              </div>
+
+              <!-- Item 2: Length (nails only) -->
+              <div id="quote-length-row" class="hidden flex items-center justify-between text-xs pb-3 border-b border-blush-mid/15">
+                <span id="quote-length-label" class="font-sans text-deep-berry/75 text-text-muted">Length Add-on (Long)</span>
+                <span id="quote-length-price" class="font-mono font-medium text-deep-berry">+₦10,000</span>
+              </div>
+
+              <!-- Item 3: Art Complexity (nails only) -->
+              <div id="quote-art-row" class="hidden flex items-center justify-between text-xs pb-3 border-b border-blush-mid/15">
+                <span id="quote-art-label" class="font-sans text-deep-berry/75 text-text-muted">Art Level (Chrome Accent)</span>
+                <span id="quote-art-price" class="font-mono font-medium text-deep-berry">+₦10,000</span>
+              </div>
+
+              <!-- Total Estimated Price -->
+              <div class="flex items-baseline justify-between pt-3">
+                <span class="font-serif text-lg text-deep-berry font-light">Total Estimated Cost</span>
+                <span id="quote-total" class="font-mono text-2xl font-bold text-deep-berry">₦25,000</span>
+              </div>
+
+              <div class="bg-blush-light/40 border border-blush-mid/15 p-4 rounded-2xl flex items-start space-x-2.5 mt-4">
+                <span class="text-xs">✨</span>
+                <p class="font-sans text-[10px] text-deep-berry/75 leading-relaxed">
+                  <strong>Estimated Duration</strong>: All sets are shaped deliberately. Expect up to 2–3 unhurried hours. Niru works with strict hygiene to protect natural nails.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- STUDIO POLICIES CONTAINER -->
+          <div class="glass-card p-6 md:p-8 rounded-3xl space-y-6 border border-blush-mid/15 bg-white/70">
+            <div class="border-b border-blush-mid/20 pb-3">
+              <h3 class="font-serif text-xl text-deep-berry font-light">Salon Slot Policies</h3>
+              <span class="block font-sans text-[9px] uppercase tracking-wider text-dusty-rose font-bold">Ajah Lekki Lagos Studio Room</span>
+            </div>
+
+            <!-- Core Policy Rules list -->
+            <ul class="space-y-4 font-sans text-[11px] md:text-xs text-deep-berry/80 leading-relaxed">
+              <li class="flex items-start space-x-2.5">
+                <span class="text-pastel-pink text-xs mt-0.5">🌸</span>
+                <div>
+                  <strong>Deposit Required</strong>: A deposit is required to secure every appointment. The amount is confirmed directly on WhatsApp after booking, and is non-refundable except where outlined below.
+                </div>
+              </li>
+              <li class="flex items-start space-x-2.5">
+                <span class="text-pastel-pink text-xs mt-0.5">🌸</span>
+                <div>
+                  <strong>Lateness</strong>: Arriving more than 15 minutes late incurs a ₦5,000 fee. Arriving more than 30 minutes late incurs a ₦10,000 fee, and your appointment may need to be rescheduled.
+                </div>
+              </li>
+              <li class="flex items-start space-x-2.5">
+                <span class="text-pastel-pink text-xs mt-0.5">🌸</span>
+                <div>
+                  <strong>No-Shows</strong>: If you don't show up without prior notice, your deposit is non-refundable and cannot be moved to a future booking.
+                </div>
+              </li>
+              <li class="flex items-start space-x-2.5">
+                <span class="text-pastel-pink text-xs mt-0.5">🌸</span>
+                <div>
+                  <strong>One Guest Per Slot</strong>: Each appointment is reserved for one client only — the studio space is intimate and limited, so please don't bring extra guests unless they also have a booked slot.
+                </div>
+              </li>
+            </ul>
+
+            <!-- Required Checkbox Box -->
+            <div class="pt-4 border-t border-blush-mid/20">
+              <label class="flex items-start space-x-3 cursor-pointer select-none">
+                <input type="checkbox" id="accept-policies" class="w-4 h-4 rounded text-deep-berry border-blush-mid/45 focus:ring-pastel-pink mt-0.5 bg-white/90" />
+                <span class="font-sans text-xs text-deep-berry/90 font-medium">
+                  I have read, understood and accept the studio policies of With Love N. <span class="text-pastel-pink">*</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Payment Details Block -->
+          <div class="mb-6 p-6 rounded-2xl bg-deep-pink text-white shadow-xl border border-blush-mid/10">
+            <h4 class="font-serif text-lg text-white mb-4 text-center tracking-wide">Make Payment After Booking</h4>
+            <div class="space-y-3 font-mono text-sm">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                <span class="text-white/70 text-xs">BANK</span>
+                <span class="font-medium tracking-wide text-white">Nom Bank</span>
+              </div>
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-black/10 p-3 rounded-lg border border-white/10 gap-2">
+                <span class="text-white/70 text-xs">ACCOUNT NUMBER</span>
+                <div class="flex items-center justify-between sm:justify-end gap-3 w-full sm:w-auto">
+                  <span class="font-bold text-[15px] tracking-wider text-white">5965559596</span>
+                  <button type="button" onclick="copyAccountNumber('5965559596', this)" class="bg-white/20 hover:bg-white/30 text-white px-2.5 py-1 rounded text-xs transition-colors font-sans focus:outline-none flex items-center justify-center min-w-[50px] font-semibold">Copy</button>
+                </div>
+              </div>
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                <span class="text-white/70 text-xs shrink-0">ACCOUNT NAME</span>
+                <span class="font-medium tracking-wide sm:text-right break-words text-white overflow-hidden text-ellipsis">Cowrywisefina/treasure</span>
+              </div>
+            </div>
+            <p class="font-sans text-xs text-white/70 text-center mt-5 leading-relaxed">
+              Pay your deposit to secure your slot. Send proof of payment on WhatsApp.
+            </p>
+          </div>
+
+          <!-- DYNAMIC SUBMIT REDIRECT FORM ACTION BUTTON -->
+          <div class="space-y-4">
+            <button type="submit" id="book-submit-btn" disabled class="w-full flex items-center justify-center text-center bg-pastel-pink/50 text-deep-berry/60 py-4 rounded-full font-serif text-base tracking-widest cursor-not-allowed transition-all duration-300 shadow-md">
+              Secure Slot via WhatsApp 💬
+            </button>
+            <p class="font-sans text-[10px] text-text-muted text-center leading-relaxed px-4">
+              Tapping this opens WhatsApp with your details already filled in for me. Just hit send, and I'll reply with my bank details to lock in your slot.
+            </p>
+            <div id="error-message" class="hidden font-sans text-xs text-red-600 bg-red-50 text-center py-2 px-4 rounded-xl"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- Floating Back To Top Button -->
+    <button id="back-to-top" class="fixed bottom-28 right-6 w-12 h-12 bg-white/90 backdrop-blur-md border border-blush-mid/40 rounded-full flex items-center justify-center text-deep-berry hover:text-dusty-rose transition-all duration-300 translate-y-24 opacity-0 z-50 shadow-md transform hover:scale-105" style="bottom: 96px; right: 24px; z-index: 50;" aria-label="Back to Top">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+      </svg>
+    </button>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2348137958600" target="_blank" rel="noopener noreferrer" class="fixed bottom-7 right-6 bg-[#25D366] text-white shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 animate-wa-pulse group flex items-center justify-center rounded-full z-[9999]" style="width: 56px; height: 56px;" aria-label="Chat with Niru on WhatsApp">
+      <!-- Custom Branded Tooltip -->
+      <span class="absolute right-16 top-1/2 -translate-y-1/2 glass-card border-blush-mid/30 text-deep-berry text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap shadow-sm font-medium">
+        Chat with Niru ✨
+      </span>
+      <svg class="w-7 h-7 flex-shrink-0 text-white" fill="currentColor" viewBox="0 0 24 24" style="width: 28px; height: 28px;">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.243 8.477 3.513 2.266 2.27 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.638 1.966 14.122.94 11.5.942 6.066.942 1.642 5.312 1.637 10.742c-.002 1.772.464 3.506 1.352 5.04l-.841 3.076 3.199-.824zm11.383-5.05c-.3-.15-1.764-.87-2.038-.97-.274-.1-.474-.15-.674.15-.2.3-.77.97-.945 1.17-.175.2-.35.225-.65.075-.3-.15-1.263-.465-2.407-1.485-.89-.794-1.49-1.775-1.665-2.075-.175-.3-.019-.462.13-.611.135-.135.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525C10.044 7.6 9.4 6.035 9.13 5.39c-.26-.63-.53-.54-.73-.55-.19-.01-.41-.01-.61-.01-.2 0-.53.075-.81.375-.28.3-1.07 1.05-1.07 2.56 0 1.51 1.1 2.97 1.25 3.17.15.2 2.165 3.31 5.245 4.64.733.317 1.306.505 1.751.646.737.234 1.41.201 1.942.122.593-.088 1.764-.72 2.014-1.415.25-.695.25-1.29.175-1.415-.075-.125-.275-.2-.575-.35z" />
+      </svg>
+    </a>
+
+    <!-- Footer Area (Identical branding alignment) -->
+    <footer class="bg-deep-pink text-white py-16 md:py-24 bg-noise relative z-10 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 sm:gap-16">
+        
+        <!-- col 1 logo -->
+        <div class="md:col-span-4 flex flex-col space-y-6">
+          <div class="flex flex-col">
+            <span class="font-serif text-3xl font-light tracking-wide text-white">With Love N</span>
+            <span class="font-sans text-[11px] uppercase tracking-[0.25em] text-pastel-pink mt-0.5 font-medium">Nails by Niru</span>
+          </div>
+          <p class="font-sans text-xs text-white/70 max-w-sm leading-relaxed">
+            "The Home of Clean, Sculpted Sets and the Soft-Girl Luxury Experience in Ajah & Lekki."
+          </p>
+          <div class="flex items-center space-x-5 pt-3">
+            <a href="https://www.instagram.com/nailsbyniru__?igsh=MThzaXEzZzU1ZDg3aA==" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pastel-pink hover:text-deep-berry transition-all duration-300" aria-label="With Love N on Instagram">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.snapchat.com/add/nailsbyniru" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pastel-pink hover:text-deep-berry transition-all duration-300" aria-label="With Love N on Snapchat">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 2.003c.795 0 3.842.215 5.351 2.916.541.97.456 2.629.388 3.953l-.008.156c-.005.083-.003.169.063.227.139.122.652.146 1.218.328.488.158.901.477.901.901 0 .564-.605.94-1.139 1.184.027.097.142.405.142.405.214.654-.072 1.099-.518 1.318-.084.041-.504.218-.504.218a3.7 3.7 0 0 1-.034.563c-.124.685-.61 1.187-1.467 1.498-.337.122-.787.252-1.354.388a4.847 4.847 0 0 0-.566.797c-.474.79-1.21 1.808-3.012 1.808-1.802 0-2.529-1.012-3.011-1.806a4.917 4.917 0 0 0-.567-.799c-.567-.136-1.017-.266-1.354-.388-.856-.31-1.343-.812-1.467-1.498a3.7 3.7 0 0 1-.034-.563s-.42-.177-.504-.218c-.446-.219-.732-.664-.518-1.318 0 0 .115-.308.142-.405-.534-.243-1.139-.62-1.139-1.184 0-.424.413-.743.901-.901.566-.182 1.079-.206 1.218-.328.066-.058.068-.144.063-.227l-.008-.156c-.068-1.324-.153-2.983.388-3.953 1.509-2.701 4.556-2.916 5.351-2.916z"/></svg>
+            </a>
+            <a href="https://tiktok.com/@_withlove_n" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pastel-pink hover:text-deep-berry transition-all duration-300" aria-label="With Love N on TikTok">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.84-.74-3.95-1.72-.1.65-.18 1.32-.18 1.98.01 1.88-.34 3.82-1.39 5.39-1.24 1.88-3.41 3.12-5.7 3.32-2.31.21-4.8-.46-6.42-2.12-1.81-1.84-2.52-4.66-1.89-7.18.57-2.28 2.22-4.27 4.46-5.11 1.25-.47 2.61-.63 3.93-.41.02 1.43-.02 2.87-.02 4.3-1.07-.15-2.22-.01-3.13.62-.91.63-1.46 1.75-1.45 2.88.02 1.15.58 2.28 1.51 2.93 1.04.73 2.47.78 3.52.12 1.13-.71 1.71-2.1 1.66-3.42V0h.15z"/></svg>
+            </a>
+            <a href="https://wa.me/2348137958600" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pastel-pink hover:text-deep-berry transition-all duration-300" aria-label="With Love N on WhatsApp">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.454L0 24zm6.59-4.846c1.6.95 3.18 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.59 1.97 14.121.944 11.493.944c-5.443 0-9.87 4.373-9.874 9.803-.001 2.009.526 3.975 1.524 5.71l-.1 1.731-.05.856.886-.237 1.778-.465zm11.215-6.817c-.301-.15-1.778-.876-2.053-.976-.275-.1-.475-.15-.675.15-.2.3-.775.976-.95 1.176-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.413-1.487-.892-.795-1.493-1.777-1.669-2.077-.175-.3-.018-.463.132-.612.135-.133.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.589-.492-.51-.675-.519-.175-.008-.375-.01-.575-.01-.2 0-.525.075-.8.375-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.22 5.11 4.52.714.31 1.272.495 1.706.634.717.228 1.37.195 1.886.118.575-.086 1.778-.726 2.028-1.427.25-.7.25-1.3.175-1.427-.075-.125-.275-.2-.575-.35z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- col 2 links -->
+        <div class="md:col-span-2 space-y-4">
+          <h4 class="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-white">Explore</h4>
+          <ul class="flex flex-col space-y-3 font-sans text-xs text-white/80">
+            <li><a href="index.html" class="hover:text-pastel-pink transition-colors">Home Base</a></li>
+            <li><a href="about.html" class="hover:text-pastel-pink transition-colors">Niru's Story</a></li>
+            <li><a href="services.html" class="hover:text-pastel-pink transition-colors">Services & Pricing</a></li>
+            <li><a href="gallery.html" class="hover:text-pastel-pink transition-colors">Gallery</a></li>
+            <li><a href="classes.html" class="hover:text-pastel-pink transition-colors">Certified Classes</a></li>
+          </ul>
+        </div>
+
+        <!-- col 3 connection -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-white">Studio Location</h4>
+          <p class="font-sans text-xs text-white/80 leading-relaxed">
+            Dipo Omotayo, <br />
+            Ajah Lekki, Addo Road, <br />
+            Lagos, Nigeria.
+          </p>
+          <div class="pt-2 flex flex-col space-y-1.5 text-xs text-white/80">
+            <a href="mailto:withloven6@gmail.com" class="hover:text-pastel-pink transition-colors">withloven6@gmail.com</a>
+            <a href="tel:+2348137958600" class="hover:text-pastel-pink transition-colors">+234 813 795 8600</a>
+          </div>
+        </div>
+
+        <!-- col 4 studio hours -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-white">Studio Hours</h4>
+          <p class="font-sans text-xs text-white/80 leading-relaxed">
+            Monday – Saturday <br />
+            8:00 AM – 7:00 PM
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-[11px] text-white/50 space-y-4 sm:space-y-0 select-none">
+        <p>&copy; 2023 With Love N. All rights reserved.</p>
+        <p>Made with love in Lagos <span class="text-pastel-pink">🤍</span></p>
+      </div>
+    </footer>
+
+    <!-- Global Nav script & Interactive Booking form scripts -->
+    <script type="module" src="/js/global.js"></script>
+    <script type="module" src="/js/book.js"></script>
+  </body>
+</html>
